@@ -1,3 +1,63 @@
-@import "fonts"
 @import "vars"
 
+header
+	background: #fff
+	position: relative
+	z-index: 1
+	width: 100%
+
+.logo
+	display: flex
+	align-items: center
+	font-family: 'Adagioscript', sans-serif
+	color: #000
+	padding: 16px 0
+	font-size: 32px
+	font-weight: bold
+	&-icon
+		width: 62px
+		@include d-flex
+	&-text
+		margin: 0 0 0 16px
+
+.nav-menu
+	margin: 0 auto
+
+.menu
+	display: flex
+	align-items: center
+	font-size: 16px
+	.nav-item
+		margin: 0 24px 0 0
+		&:last-child
+			margin: 0
+	.nav-link
+		padding: 0
+		color: $dark
+		&:hover
+			color: $accent-green
+
+.phone
+	color: $dark
+	font-weight: bold
+	font-size: 40px
+	font-family: $title-font
+
+.link-callback
+	text-align: right
+	margin: 8px 0 0 auto
+
+.btn-basket, .btn-burger
+	@include d-flex
+	width: 62px
+	height: 62px
+	margin: 0 0 0 16px
+	border: 1px solid $accent-green
+	padding: 15px
+	fill: $accent-green
+	&:hover
+		background: $accent-green
+		fill: $dark
+
+.btn-burger
+	display: none

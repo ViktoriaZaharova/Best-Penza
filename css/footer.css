@@ -1,5 +1,42 @@
-/* footer */
-
-
-
-/* footer end */
+@font-face {
+  font-family: "Pobeda";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Pobeda/Pobeda-Regular.eot");
+  src: url("../fonts/Pobeda/Pobeda-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Pobeda/Pobeda-Regular.woff") format("woff"), url("../fonts/Pobeda/Pobeda-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Pobeda";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/Pobeda/Pobeda-Bold.eot");
+  src: url("../fonts/Pobeda/Pobeda-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Pobeda/Pobeda-Bold.woff") format("woff"), url("../fonts/Pobeda/Pobeda-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "AvenirNext";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/AvenirNext/AvenirNext-Regular.eot");
+  src: url("../fonts/AvenirNext/AvenirNext-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNext/AvenirNext-Regular.woff") format("woff"), url("../fonts/AvenirNext/AvenirNext-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "AvenirNext";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/AvenirNext/AvenirNext-Medium.eot");
+  src: url("../fonts/AvenirNext/AvenirNext-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNext/AvenirNext-Medium.woff") format("woff"), url("../fonts/AvenirNext/AvenirNext-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "AvenirNext";
+  font-weight: 600;
+  font-style: normal;
+  src: url("../fonts/AvenirNext/AvenirNext-Demi.eot");
+  src: url("../fonts/AvenirNext/AvenirNext-Demi.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNext/AvenirNext-Demi.woff") format("woff"), url("../fonts/AvenirNext/AvenirNext-Demi.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Adagioscript";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/Adagioscript/Adagioscript.eot");
+  src: url("../fonts/Adagioscript/Adagioscript.eot?#iefix") format("embedded-opentype"), url("../fonts/Adagioscript/Adagioscript.woff") format("woff"), url("../fonts/Adagioscript/Adagioscript.ttf") format("truetype");
+}

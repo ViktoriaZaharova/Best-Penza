@@ -126,12 +126,139 @@ button, .btn
 	align-items: center
 	justify-content: center
 	text-align: center
-	padding: 10px 45px
-	font-size: 16px
+	padding: 15px 24px 10px
+	font-size: 24px
+	line-height: normal
+	font-family: $title-font
 	font-weight: bold
-	height: 46px
-	border-radius: 10px
+	border: 1px solid #fff
+	border-radius: 0
 	transition: 0.3s ease
+
+.btn-md
+	padding: 24px 32px 16px
+	font-size: 32px
+
+.btn-accent-blue
+	background: $accent-blue
+	color: #fff
+	border: 1px solid #fff
+	&:hover
+		background: $accent-blue-deep
+		color: #fff
+		border: 1px solid #fff
+	&:focus, &.active
+		background: $accent-blue-deep
+		border-color: $dark-30
+		color: #fff
+		box-shadow: 4px 4px 4px 0px rgba(111, 175, 211, 0.40)
+	&:disabled, &.disabled
+		opacity: 0.4
+		appearance: none
+		background: $accent-blue
+		color: #fff
+		border-color: transparent	
+
+
+.btn-accent-green
+	background: $accent-green
+	color: #fff
+	border: 1px solid #fff
+	&:hover
+		background: $accent-green-deep
+		color: #fff
+		border: 1px solid #fff
+	&:focus, &:active, &.active
+		background: $accent-green-deep
+		border-color: $dark-30
+		color: #fff
+		box-shadow: 4px 4px 4px 0px rgba(149, 194, 105, 0.40)
+	&:disabled, &.disabled
+		opacity: 0.4
+		appearance: none
+		background: $accent-green
+		color: #fff
+		border-color: transparent	
+
+.btn-accent-turquoise
+	background: $accent-turquoise
+	color: #fff
+	border: 1px solid #fff
+	&:hover
+		background: $accent-turquoise-deep
+		color: #fff
+		border: 1px solid #fff
+	&:focus, &:active, &.active
+		background: $accent-turquoise
+		border-color: $dark-30
+		color: #fff
+		box-shadow: 4px 4px 4px 0px rgba(107, 191, 166, 0.40)
+	&:disabled, &.disabled
+		opacity: 0.4
+		appearance: none
+		background: $accent-turquoise
+		color: #fff	
+		border-color: transparent	
+
+.btn-dark
+	background: $dark
+	color: #fff
+	border: 1px solid #fff
+	&:hover
+		background: $dark-light
+		color: #fff
+		border: 1px solid #fff
+	&:focus, &:active, &.active
+		background: $dark-light
+		border-color: $dark-30
+		color: #fff
+		box-shadow: 4px 4px 4px 0px rgba(92, 99, 127, 0.40)
+	&:disabled, &.disabled
+		opacity: 0.2
+		appearance: none
+		background: $dark
+		color: #fff	
+		border-color: transparent		
+
+.btn-border-blue
+	background: #fff
+	border: 1px solid $accent-blue
+	color: $accent-blue
+	&:hover
+		border-color: #fff
+		background: $accent-blue	
+		color: #fff
+	&:focus, &:active, &.active
+		box-shadow: 4px 4px 4px 0px rgba(111, 175, 211, 0.40)
+		border-color: #fff
+		color: #fff
+		background: $accent-blue-deep
+	&:disabled, &.disabled
+		opacity: 0.6
+		appearance: none
+		background: #fff
+		color: $accent-blue	
+		border-color: $accent-blue			
+			
+.btn-border-green
+	background: transparent
+	border: 1px solid $accent-green
+	color: $accent-green
+	&:hover
+		border-color: #fff
+		background: $accent-green	
+		color: #fff
+	&:focus, &:active, &.active
+		box-shadow: 4px 4px 4px 0px rgba(149, 194, 105, 0.40)
+		border-color: #fff
+		color: #fff
+		background: $accent-green-deep
+	&:disabled, &.disabled
+		opacity: 0.6
+		appearance: none
+		background: transparent
+		color: $accent-green	
+		border-color: $accent-green				
 
 .svg-icon
 	display: inline-block
@@ -139,8 +266,8 @@ button, .btn
 	height: 100%
 
 strong, b
-	font-weight: bold
-	display: inline-block
+	font-weight: 600
+	display: inline
 
 ul, ol
 	padding: 0 0 0 20px
@@ -152,21 +279,193 @@ ul, ol
 .list-dots
 	list-style-type: disc
 
+h1, .h1
+	width: 100%
+	margin: 0
+	font-family: $title-font
+	font-size: 90px
+	font-weight: bold
+	line-height: 83px
+
+h2, .h2
+	width: 100%
+	margin: 0
+	font-family: $title-font
+	font-size: 64px
+	font-weight: bold
+	line-height: 60px
+
+h3, .h3
+	width: 100%
+	margin: 0
+	font-family: $title-font
+	font-size: 40px
+	font-weight: bold
+	line-height: 40px
+
+h4, .h4
+	width: 100%
+	margin: 0
+	font-family: $title-font
+	font-size: 32px
+	font-weight: bold
+	line-height: 34px	
+
+h5, .h5
+	width: 100%
+	margin: 0
+	font-family: $title-font
+	font-size: 24px
+	font-weight: bold
+	line-height: normal	
+
+blockquote
+	font-size: 23px
+	font-weight: 700
+	font-style: italic
+	letter-spacing: 1.15px
+	line-height: 190%
+
+.title-overlay
+	opacity: 0.7
+	line-height: 170px
+	font-size: 195px
+	font-weight: bold
+	color: #fff
+	font-family: $title-font
+	text-align: center
+	width: 100%
+	z-index: -1
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%,-50%)
+	
+
+.font-500
+	font-weight: 500
+
+.font-600
+	font-weight: 600
+
+.font-700
+	font-weight: 700
+
+.box-text
+	font-size: 16px
+	line-height: normal
+
+.box-text-md
+	font-size: 24px
+	line-height: 32px	
+
+.text-article
+	font-size: 20px
+	line-height: 32px	
+	letter-spacing: 0.4px
+
+	
+
+.text-decoration
+	text-decoration: underline
+
+.d-inline
+	display: inline
+	
 .container
-	max-width: 1520px
-	padding: 0 12px	
+	max-width: 1518px
+	padding: 0 16px
 
 .row
-	margin: 0 -12px
+	margin: 0 -16px
 	>*
-		padding: 0 12px
+		padding: 0 16px
 
+.dropdown-toggle
+	display: flex
+	align-items: center
+	&::after
+		content: ''
+		margin: 0 0 0 4px
+		@include d-flex
+		width: 11px
+		height: 6px
+		background: url('../img/arrow-dropdown.svg') no-repeat center
+		background-size: 100%
+		border: none
 
+.dropdown-menu
+	border-radius: 0
+	border: 1px solid $accent-blue
+	padding: 0
+	min-width: 240px
+	margin: 0
+	background: #fff
+	font-size: 16px
+	font-family: $default-font
+
+.dropdown-item
+	width: 100%
+	padding: 16px
+	border: 1px solid $gray
+	background: $light-blue
+	color: $dark
+	&:hover
+		border-color: $accent-blue
+		color: $dark
+		background: $light-blue
+	&:focus, &:active, &:active
+		background: $accent-blue
+		border-color: $accent-blue
+		color: #fff
+		
+
+.color-accent-green
+	color: $accent-green
+
+a.color-accent-green	
+	&:hover
+		color: $accent-green-deep
+
+.color-accent-blue
+	color: $accent-blue	
+
+a.color-accent-blue	
+	&:hover
+		color: $accent-blue-deep
+
+// slick slider	
 .slick-slider
 	width: 100%
 
 .slick-slide
 	outline: none
+
+.slider-nav
+	display: flex
+	align-items: center
+
+.slick-dots
+	width: fit-content
+	padding: 0
+	list-style: none
+	display: flex
+	align-items: center
+	li
+		cursor: pointer
+		border-radius: 50%
+		width: 12px
+		height: 12px
+		margin: 0 11px 0 0
+		transition: .3s ease
+		border: 1px solid $dark
+		background: #fff
+		&.slick-active
+			background: $dark
+		&:last-child
+			margin: 0
+		button
+			display: none		
 
 //checkbox my
 .label-checkbox
