@@ -26,3 +26,11 @@ $('.home-image-slider').slick({
 	swipe: false,
 	infinite: false,
 });
+
+$(".home-slider").on('afterChange', function (event, slick, currentSlide) {
+	$(".home-slider__cp").text(currentSlide < 10 ? `0${currentSlide + 1}` : currentSlide + 1);
+});
+
+Fancybox.bind("[data-fancybox]", {
+	// Your custom options
+});

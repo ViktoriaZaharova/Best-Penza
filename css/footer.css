@@ -13,25 +13,25 @@
   src: url("../fonts/Pobeda/Pobeda-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Pobeda/Pobeda-Bold.woff") format("woff"), url("../fonts/Pobeda/Pobeda-Bold.ttf") format("truetype");
 }
 @font-face {
-  font-family: "AvenirNext";
+  font-family: "AvenirNextCyr";
   font-weight: 400;
   font-style: normal;
-  src: url("../fonts/AvenirNext/AvenirNext-Regular.eot");
-  src: url("../fonts/AvenirNext/AvenirNext-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNext/AvenirNext-Regular.woff") format("woff"), url("../fonts/AvenirNext/AvenirNext-Regular.ttf") format("truetype");
+  src: url("../fonts/AvenirNextCyr/AvenirNextCyr-Regular.eot");
+  src: url("../fonts/AvenirNextCyr/AvenirNextCyr-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNextCyr/AvenirNextCyr-Regular.woff") format("woff"), url("../fonts/AvenirNextCyr/AvenirNextCyr-Regular.ttf") format("truetype");
 }
 @font-face {
-  font-family: "AvenirNext";
+  font-family: "AvenirNextCyr";
   font-weight: 500;
   font-style: normal;
-  src: url("../fonts/AvenirNext/AvenirNext-Medium.eot");
-  src: url("../fonts/AvenirNext/AvenirNext-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNext/AvenirNext-Medium.woff") format("woff"), url("../fonts/AvenirNext/AvenirNext-Medium.ttf") format("truetype");
+  src: url("../fonts/AvenirNextCyr/AvenirNextCyr-Medium.eot");
+  src: url("../fonts/AvenirNextCyr/AvenirNextCyr-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNextCyr/AvenirNextCyr-Medium.woff") format("woff"), url("../fonts/AvenirNextCyr/AvenirNextCyr-Medium.ttf") format("truetype");
 }
 @font-face {
-  font-family: "AvenirNext";
+  font-family: "AvenirNextCyr";
   font-weight: 600;
   font-style: normal;
-  src: url("../fonts/AvenirNext/AvenirNext-Demi.eot");
-  src: url("../fonts/AvenirNext/AvenirNext-Demi.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNext/AvenirNext-Demi.woff") format("woff"), url("../fonts/AvenirNext/AvenirNext-Demi.ttf") format("truetype");
+  src: url("../fonts/AvenirNextCyr/AvenirNextCyr-Demi.eot");
+  src: url("../fonts/AvenirNextCyr/AvenirNextCyr-Demi.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNextCyr/AvenirNextCyr-Demi.woff") format("woff"), url("../fonts/AvenirNextCyr/AvenirNextCyr-Demi.ttf") format("truetype");
 }
 @font-face {
   font-family: "Adagioscript";

@@ -13,25 +13,25 @@
   src: url("../fonts/Pobeda/Pobeda-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Pobeda/Pobeda-Bold.woff") format("woff"), url("../fonts/Pobeda/Pobeda-Bold.ttf") format("truetype");
 }
 @font-face {
-  font-family: "AvenirNext";
+  font-family: "AvenirNextCyr";
   font-weight: 400;
   font-style: normal;
-  src: url("../fonts/AvenirNext/AvenirNext-Regular.eot");
-  src: url("../fonts/AvenirNext/AvenirNext-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNext/AvenirNext-Regular.woff") format("woff"), url("../fonts/AvenirNext/AvenirNext-Regular.ttf") format("truetype");
+  src: url("../fonts/AvenirNextCyr/AvenirNextCyr-Regular.eot");
+  src: url("../fonts/AvenirNextCyr/AvenirNextCyr-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNextCyr/AvenirNextCyr-Regular.woff") format("woff"), url("../fonts/AvenirNextCyr/AvenirNextCyr-Regular.ttf") format("truetype");
 }
 @font-face {
-  font-family: "AvenirNext";
+  font-family: "AvenirNextCyr";
   font-weight: 500;
   font-style: normal;
-  src: url("../fonts/AvenirNext/AvenirNext-Medium.eot");
-  src: url("../fonts/AvenirNext/AvenirNext-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNext/AvenirNext-Medium.woff") format("woff"), url("../fonts/AvenirNext/AvenirNext-Medium.ttf") format("truetype");
+  src: url("../fonts/AvenirNextCyr/AvenirNextCyr-Medium.eot");
+  src: url("../fonts/AvenirNextCyr/AvenirNextCyr-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNextCyr/AvenirNextCyr-Medium.woff") format("woff"), url("../fonts/AvenirNextCyr/AvenirNextCyr-Medium.ttf") format("truetype");
 }
 @font-face {
-  font-family: "AvenirNext";
+  font-family: "AvenirNextCyr";
   font-weight: 600;
   font-style: normal;
-  src: url("../fonts/AvenirNext/AvenirNext-Demi.eot");
-  src: url("../fonts/AvenirNext/AvenirNext-Demi.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNext/AvenirNext-Demi.woff") format("woff"), url("../fonts/AvenirNext/AvenirNext-Demi.ttf") format("truetype");
+  src: url("../fonts/AvenirNextCyr/AvenirNextCyr-Demi.eot");
+  src: url("../fonts/AvenirNextCyr/AvenirNextCyr-Demi.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNextCyr/AvenirNextCyr-Demi.woff") format("woff"), url("../fonts/AvenirNextCyr/AvenirNextCyr-Demi.ttf") format("truetype");
 }
 @font-face {
   font-family: "Adagioscript";
@@ -84,7 +84,7 @@ body {
   min-width: 320px;
   position: relative;
   line-height: normal;
-  font-family: "AvenirNext", sans-serif;
+  font-family: "AvenirNextCyr", sans-serif;
   font-weight: normal;
   background: #fff;
   color: #152250;
@@ -124,7 +124,7 @@ input, textarea, select {
   padding: 0 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "AvenirNext", sans-serif;
+  font-family: "AvenirNextCyr", sans-serif;
   border: none;
   border-radius: 10px;
   width: 100%;
@@ -187,7 +187,7 @@ button, .btn {
   cursor: pointer;
   -webkit-box-shadow: none;
           box-shadow: none;
-  font-family: "AvenirNext", sans-serif;
+  font-family: "AvenirNextCyr", sans-serif;
   padding: 0;
   margin: 0;
   border: none;
@@ -428,6 +428,8 @@ h2, .h2 {
   font-size: 64px;
   font-weight: bold;
   line-height: 60px;
+  position: relative;
+  z-index: 1;
 }
 
 h3, .h3 {
@@ -510,6 +512,12 @@ blockquote {
   letter-spacing: 0.4px;
 }
 
+.subtitle-text {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Adagioscript", sans-serif;
+}
+
 .text-decoration {
   text-decoration: underline;
 }
@@ -521,6 +529,10 @@ blockquote {
 .container {
   max-width: 1518px;
   padding: 0 16px;
+}
+
+.container-fluid {
+  padding: 0 25px;
 }
 
 .row {
@@ -565,7 +577,7 @@ blockquote {
   margin: 0;
   background: #fff;
   font-size: 16px;
-  font-family: "AvenirNext", sans-serif;
+  font-family: "AvenirNextCyr", sans-serif;
 }
 
 .dropdown-item {
@@ -586,6 +598,51 @@ blockquote {
   color: #fff;
 }
 
+.link-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Adagioscript", sans-serif;
+  font-size: 24px;
+  line-height: normal;
+  padding: 0 0 4px;
+}
+.link-page svg {
+  width: 28px;
+  height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 0 0 4px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.link-page-white {
+  color: #fff;
+}
+.link-page-white svg {
+  fill: #fff;
+}
+.link-page-white:hover {
+  color: #fff;
+}
+.link-page-white:hover svg {
+  margin: 0 0 0 12px;
+}
+.link-page-white:focus, .link-page-white:active, .link-page-white.active {
+  background: #e7eef2;
+  color: #fff;
+}
+
 .color-accent-green {
   color: #a3d076;
 }
@@ -600,6 +657,42 @@ a.color-accent-green:hover {
 
 a.color-accent-blue:hover {
   color: #6fafd3;
+}
+
+.color-accent-turquoise {
+  color: #76d0b5;
+}
+
+.bg-accent-green {
+  background: #a3d076;
+}
+
+.bg-accent-blue {
+  background: #87c3e5;
+}
+
+.bg-accent-turquoise {
+  background: #76d0b5;
+}
+
+.bg-light-blue {
+  background: #f2f6f8;
+}
+
+.mb-25 {
+  margin-bottom: 25px;
+}
+
+.mb-46 {
+  margin-bottom: 46px;
+}
+
+.mb-48 {
+  margin-bottom: 48px;
+}
+
+.mb-55 {
+  margin-bottom: 55px;
 }
 
 .slick-slider {
@@ -651,6 +744,33 @@ a.color-accent-blue:hover {
 }
 .slick-dots li button {
   display: none;
+}
+
+.counter-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  font-size: 54px;
+  font-family: "Pobeda", sans-serif;
+  font-weight: bold;
+  line-height: 52px;
+}
+.counter-slide .cp {
+  min-width: 49px;
+  text-align: center;
+}
+.counter-slide::before {
+  content: "";
+  width: 75px;
+  height: 1px;
+  background: #152250;
+  margin: 0 10px;
 }
 
 .label-checkbox {
