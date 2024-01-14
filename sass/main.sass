@@ -665,3 +665,123 @@
 		iframe
 			width: 100%
 			height: 100%
+
+// dealers page
+.advantages-work
+	position: relative
+	z-index: 1
+	h2
+		margin: 113px 0 54px
+		width: 50%
+	&__img
+		background: #fff
+		border: 1px solid $accent-blue
+		padding: 24px
+		@include d-flex
+		max-width: 618px
+		width: 100%
+		position: relative
+		z-index: 1
+
+.advantages-work__img1
+	margin: -80px 0 -112px
+
+.advantages-work-list
+	width: 100%
+	display: flex
+	align-items: stretch
+	flex-wrap: wrap
+	&-item
+		width: 50%
+		display: flex
+		align-items: center
+		border: 1px solid $accent-blue
+		padding: 24px
+		&:first-child, &:nth-child(2)
+			border-bottom: none
+		&:nth-child(odd)
+			border-right: none	
+		&__icon
+			@include d-flex
+			width: 62px
+			height: 62px
+			min-width: 62px
+			padding: 11px
+		&__text
+			padding: 0 0 0 24px
+
+.advantages-work__img2
+	box-shadow: -24px 24px 0px 0px #87C3E5
+	max-width: 372px
+	margin: 0 0 0 auto
+	border-top: none
+
+.advantages-work-column
+	width: 50%	
+	&:nth-child(2)
+		margin: -30px 0 0
+
+.cooperation-section
+	padding: 240px 0 0
+
+	.text-overlay
+		text-align: left
+		max-width: 984px
+	.box-text
+		max-width: 380px
+	.decor-line2
+		height: 240px
+
+// payments-section
+.payments-section
+	padding: 120px 0 100px	
+
+.payments-card
+	position: relative
+	z-index: 1
+	width: 100%
+	background: #fff
+	border: 1px solid $accent-blue
+	padding: 48px
+	backdrop-filter: blur(5px)
+	transition: .3s ease
+	&:hover
+		box-shadow: 40px 40px 0px 0px #87C3E5
+	h2, .h2
+		color: $accent-blue-deep	
+	&-box
+		margin: 48px 0 0
+	h3
+		margin: 0 0 8px	
+	&__description
+		margin: 48px 0 0
+		font-size: 18px
+		font-weight: bold
+		font-style: italic
+		color: $accent-blue-deep
+
+.delivery-section
+	padding: 0 0 95px
+	h3
+		max-width: 295px
+	
+.delivery-title
+	h4
+		font-family: $font2
+		line-height: 28px	
+
+.delivery-box
+	width: 100%
+	height: 100%
+	padding: 24px
+	text-align: center
+	background: #fff
+	border: 1px solid $accent-blue
+	font-weight: 500
+	&__logo
+		@include d-flex
+		height: 80px
+		width: 100%
+		margin: 0 auto 16px
+		img
+			max-height: 100%
