@@ -100,11 +100,7 @@
 		right: 0
 		bottom: 0
 		z-index: 1
-		background: #fff
 		border: 1px solid $gray
-		display: flex
-		align-items: center
-		padding: 24px
 
 .home-image-slider
 	position: absolute
@@ -291,8 +287,14 @@
 		top: 50%
 		transform: translate(0,-50%)
 		height: 100%
-		@include d-flex
+		display: flex
+		align-items: flex-end
+		justify-content: flex-end
 		z-index: -1
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
 	&__wrapper
 		width: 100%
 		height: 100%
@@ -304,7 +306,6 @@
 		height: 100%
 		display: flex
 		flex-direction: column
-		// align-items: flex-end
 		justify-content: flex-end
 	&__title
 		color: #fff
@@ -402,40 +403,24 @@
 	z-index: 1
 	overflow: hidden
 	padding: 120px 0 0
-	.text-overlay
-		text-align: center
-		width: 100%
-		margin: 0 auto -52px
-		font-size: 195px
-		font-family: $title-font
-		font-weight: bold
-		line-height: 170px
-		color: $white-30
-		opacity: 0.4
-		-webkit-text-stroke: 1px #fff
+
 	h2
 		max-width: 520px
 		margin: 0 auto 29px
 	.btn
 		margin: 0 auto
-	.decor-line1
-		width: 467px
-		background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #FFF 100%)
-	.decor-line2
-		height: 120px
-		background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFF 100%)
-	.decor-line3
-		width: 466px
-		height: 1px
-		left: 100%
-		top: 100%
-		background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, #FFF 100%)	
-	.decor-line4
-		background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, #FFF 100%)
-		height: 120px
-		width: 1px
-		top: 100%
-		right: 100%	
+
+.text-overlay
+	text-align: center
+	width: 100%
+	margin: 0 auto -52px
+	font-size: 195px
+	font-family: $title-font
+	font-weight: bold
+	line-height: 170px
+	color: $white-30
+	opacity: 0.4
+	-webkit-text-stroke: 1px #fff
 
 .dealers-overlay
 	position: relative
@@ -448,6 +433,24 @@
 	border: 1px solid $light-blue
 	backdrop-filter: blur(7.5px)
 	text-align: center
+	.decor-line1
+		width: 467px
+		background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #FFF 100%)
+	.decor-line2
+		height: 120px
+		background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFF 100%)
+	.decor-line3
+		width: 466px
+		height: 1px
+		left: 100%
+		top: 100%
+		background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, #FFF 100%)
+	.decor-line4
+		background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, #FFF 100%)
+		height: 120px
+		width: 1px
+		top: 100%
+		right: 100%
 
 .dealers-wrapper
 	border: 1px solid #fff
@@ -463,8 +466,202 @@
 
 // our-news
 .our-news
-	padding: 112px 0 119px
+	padding: 120px 0
 	.subtitle-text
 		margin: -15px 0 0
 
+.news-card
+	width: 100%
+	height: 100%
+	&__img
+		padding: 24px
+		width: 100%
+		height: 351px
+		background: #fff
+		border: 1px solid transparent
+		border-bottom: none
+		img
+			border: 1px solid transparent
+			width: 100%
+			height: 100%
+			object-fit: cover
+	&__body
+		width: 100%
+		background: #fff
+		padding: 24px
+		border: 1px solid transparent
+	.box-text
+		margin: 10px 0 24px
 
+	&-green
+		.news-card__img
+			border-color: $accent-green
+			img
+				border-color: $accent-green
+		.news-card__body
+			border-color: $accent-green
+	&-blue
+		.news-card__img
+			border-color: $accent-blue
+			img
+				border-color: $accent-blue
+		.news-card__body
+			border-color: $accent-blue
+
+// reviews
+.reviews
+	padding: 111px 0 27px
+	background: #fff
+	.title-overlay
+		left: -50%
+		transform: translate(0,-50%)
+	h2
+		width: fit-content
+
+.reviews-slider
+	padding: 0 114px
+	.slick-slide
+		padding: 0 12px
+	.slick-track
+		display: flex
+		align-items: flex-end
+	.slick-arrow
+		position: absolute
+		bottom: 0
+	.slick-prev
+		left: 0
+	.slick-next
+		right: 0
+	&__nav
+		margin: 15px 0 0 auto
+		width: fit-content
+
+.reviews-card
+	padding: 40px 30px 40px 40px
+	background: #fff
+	width: 100%
+	border: 1px solid $accent-blue
+	&__position
+		color: $accent-blue
+		font-family: $font2
+		font-size: 24px
+		font-weight: bold
+	.box-text
+		margin: 32px 0 0
+		max-width: 437px
+
+// callback-section
+.callback-section
+	background: url("../img/callback-bg.png") no-repeat center 64px
+	background-size: cover
+	position: relative
+	overflow: hidden
+	padding: 120px 0 0
+	.text-overlay
+		text-align: right
+		max-width: 1037px
+		margin: 0 auto -52px
+	h2
+		text-align: center	
+
+.callback-overlay
+	text-align: left
+	border-width: 1px
+	border-style: solid
+	border-image: linear-gradient(180deg, #A7CCE1 0%, #FFF 100%) 1
+	.decor-line1
+		width: 468px
+		background: linear-gradient(270deg, #A7CCE1 0%, #FFF 100%)
+	.decor-line2
+		height: 120px
+		background: linear-gradient(0deg, #A7CCE1 0%, #FFF 100%)
+	.decor-line3
+		width: 466px
+		height: 1px
+		left: 100%
+		top: 100%
+		background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, #FFF 100%)
+	.decor-line4
+		background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, #FFF 100%)
+		height: 120px
+		width: 1px
+		top: 100%
+		right: 100%
+
+.callback-wrapper
+	border-width: 1px
+	border-style: solid
+	border-image: linear-gradient(180deg, #A7CCE1 0%, #FFF 100%) 1
+	padding: 54px
+	.box-text
+		max-width: 341px
+		text-align: center
+		margin: 0 auto
+
+.consent
+	max-width: 358px
+
+// news page
+.card-col
+	display: none
+	&:nth-child(-n+6)
+		display: block
+			
+
+// contacts page
+.contacts-section
+	padding: 120px 0 108px
+
+
+.contacts-box
+	width: 100%
+	background: #fff
+	text-align: center
+	padding: 48px
+	border: 1px solid $accent-blue
+	transition: .3s ease
+	&:hover
+		box-shadow: 24px -24px 0px 0px #87C3E5
+	&__icon
+		@include d-flex
+		background: $accent-blue
+		fill: #fff
+		margin: 0 auto 22px
+		padding: 15px
+		width: 62px
+		height: 62px
+	h4
+		margin: 0 auto 8px	
+	&__link
+		margin: 0 auto 20px
+		text-decoration: underline
+		color: $accent-blue-deep
+
+		&:last-child
+			margin: 0 auto
+
+
+
+.address-manufacturer
+	position: relative
+	z-index: 1
+	&::before
+		content: ''
+		position: absolute
+		left: 0
+		bottom: 0
+		width: 100%
+		height: 50%
+		z-index: -1
+		background: #fff
+	.address-box
+		margin: 16px auto
+	&__map
+		width: 100%
+		height: 600px
+		background: #fff
+		border: 1px solid $accent-blue
+		padding: 24px
+		iframe
+			width: 100%
+			height: 100%

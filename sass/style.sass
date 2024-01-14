@@ -64,27 +64,28 @@ a
 	&:hover, &:focus
 		text-decoration: none
 
-input, textarea, select
+input, textarea, select, .form-control
 	outline: none
 	box-shadow: none
 	appearance: none
-	padding: 0 15px
+	padding: 0 20px
 	box-sizing: border-box
 	font-family: $default-font
-	border: none
-	border-radius: 10px
+	border: 1px solid $dark
+	border-radius: 0
 	width: 100%
-	height: 54px
-	background: transparent
-	color: #000
-	font-size: 15px
+	height: 62px
+	background: #fff
+	color: rgba($dark, .4)
+	font-size: 16px
 	cursor: pointer
 	&::placeholder
-		color: #595959
-
+		color: rgba($dark, .4)
 	&:hover, &:focus
 		outline: none
 		box-shadow: none
+	&:focus
+		color: rgba($dark, .4)	
 
 input[type="radio"], input[type="checkbox"]
 	width: auto
@@ -96,15 +97,45 @@ input[type="radio"], input[type="checkbox"]
 label
 	display: block
 	width: 100%
-	margin: 0 0 13px
+	margin: 0
 
-	&:last-child
-		margin: 0
+.label-title
+	width: 100%
+	margin: 0 0 16px
+	font-weight: 500
+	text-align: left	
 
-textarea
+textarea, textarea.form-control
 	resize: none
-	padding: 12px 17px
-	height: 103px
+	padding: 20px
+	height: 154px
+
+.form-callback
+	margin: 50px auto 0
+	width: 100%
+	max-width: 735px
+	[type="submit"]
+		margin-left: auto
+
+.form-group
+	&.focus
+		.label-title
+			color: $accent-blue-deep
+		input, textarea, .form-control
+			box-shadow: 4px 4px 0px 0px rgba(130, 187, 219, 0.50)
+			border-color: $accent-blue-deep	
+	&-error
+		color: #D076A1
+		input, textarea, .form-control
+			box-shadow: 4px 4px 0px 0px rgba(208, 118, 161, 0.50)
+			border-color: #D076A1
+	&.disabled
+		.label-title
+			color: rgba(21, 34, 80, 0.30)
+		input, textarea, .form-control
+			color: rgba(21, 34, 80, 0.30)
+			border-color: rgba(21, 34, 80, 0.30)
+
 
 button, .btn
 	outline: none
@@ -157,8 +188,7 @@ button, .btn
 		appearance: none
 		background: $accent-blue
 		color: #fff
-		border-color: transparent	
-
+		border-color: transparent
 
 .btn-accent-green
 	background: $accent-green
@@ -178,7 +208,7 @@ button, .btn
 		appearance: none
 		background: $accent-green
 		color: #fff
-		border-color: transparent	
+		border-color: transparent
 
 .btn-accent-turquoise
 	background: $accent-turquoise
@@ -197,8 +227,8 @@ button, .btn
 		opacity: 0.4
 		appearance: none
 		background: $accent-turquoise
-		color: #fff	
-		border-color: transparent	
+		color: #fff
+		border-color: transparent
 
 .btn-dark
 	background: $dark
@@ -217,8 +247,8 @@ button, .btn
 		opacity: 0.2
 		appearance: none
 		background: $dark
-		color: #fff	
-		border-color: transparent		
+		color: #fff
+		border-color: transparent
 
 .btn-border-blue
 	background: #fff
@@ -226,7 +256,7 @@ button, .btn
 	color: $accent-blue
 	&:hover
 		border-color: #fff
-		background: $accent-blue	
+		background: $accent-blue
 		color: #fff
 	&:focus, &:active, &.active
 		box-shadow: 4px 4px 4px 0px rgba(111, 175, 211, 0.40)
@@ -237,16 +267,16 @@ button, .btn
 		opacity: 0.6
 		appearance: none
 		background: #fff
-		color: $accent-blue	
-		border-color: $accent-blue			
-			
+		color: $accent-blue
+		border-color: $accent-blue
+
 .btn-border-green
 	background: transparent
 	border: 1px solid $accent-green
 	color: $accent-green
 	&:hover
 		border-color: #fff
-		background: $accent-green	
+		background: $accent-green
 		color: #fff
 	&:focus, &:active, &.active
 		box-shadow: 4px 4px 4px 0px rgba(149, 194, 105, 0.40)
@@ -257,8 +287,8 @@ button, .btn
 		opacity: 0.6
 		appearance: none
 		background: transparent
-		color: $accent-green	
-		border-color: $accent-green				
+		color: $accent-green
+		border-color: $accent-green
 
 .svg-icon
 	display: inline-block
@@ -311,7 +341,7 @@ h4, .h4
 	font-family: $title-font
 	font-size: 32px
 	font-weight: bold
-	line-height: 34px	
+	line-height: 34px
 
 h5, .h5
 	width: 100%
@@ -319,7 +349,7 @@ h5, .h5
 	font-family: $title-font
 	font-size: 24px
 	font-weight: bold
-	line-height: normal	
+	line-height: normal
 
 blockquote
 	font-size: 23px
@@ -342,7 +372,7 @@ blockquote
 	top: 50%
 	left: 50%
 	transform: translate(-50%,-50%)
-	
+
 .font-500
 	font-weight: 500
 
@@ -358,11 +388,11 @@ blockquote
 
 .box-text-md
 	font-size: 24px
-	line-height: 32px	
+	line-height: 32px
 
 .text-article
 	font-size: 20px
-	line-height: 32px	
+	line-height: 32px
 	letter-spacing: 0.4px
 
 .subtitle-text
@@ -375,14 +405,13 @@ blockquote
 
 .d-inline
 	display: inline
-	
+
 .container
 	max-width: 1518px
 	padding: 0 16px
 
 .container-fluid
 	padding: 0 25px
-		
 
 .row
 	margin: 0 -16px
@@ -426,7 +455,7 @@ blockquote
 		background: $accent-blue
 		border-color: $accent-blue
 		color: #fff
-		
+
 .link-page
 	display: flex
 	align-items: center
@@ -440,72 +469,130 @@ blockquote
 		@include d-flex
 		margin: 0 0 0 4px
 		transition: .3s ease
+	&:hover
+		svg
+			margin: 0 0 0 12px
+	&:focus, &:active, &.active
+		background: $gray2
 	&-white
 		color: #fff
 		svg
 			fill: #fff
 		&:hover
 			color: #fff
-			svg
-				margin: 0 0 0 12px
 		&:focus, &:active, &.active
-			background: $gray2
 			color: #fff
-
-				
-
+	&-green
+		color: $accent-green
+		svg
+			fill: $accent-green
+		&:hover, &:focus, &:active, &.active
+			color: $accent-green
+		&.disabled, &:disabled
+			opacity: 0.5	
+			color: $accent-green
+	&-blue
+		color: $accent-blue
+		svg
+			fill: $accent-blue
+		&:hover, &:focus, &:active, &.active
+			color: $accent-blue
+		&.disabled, &:disabled
+			opacity: 0.5	
+			color: $accent-blue		
+	&-turquoise
+		color: $accent-turquoise
+		svg
+			fill: $accent-turquoise
+		&:hover, &:focus, &:active, &.active
+			color: $accent-turquoise
+		&.disabled, &:disabled
+			opacity: 0.5	
+			color: $accent-turquoise
+	&-dark
+		color: $dark
+		svg
+			fill: $dark
+		&:hover, &:focus, &:active, &.active
+			color: $dark
+		&.disabled, &:disabled
+			opacity: 0.5	
+			color: $dark				
 
 .color-accent-green
 	color: $accent-green
 
-a.color-accent-green	
+a.color-accent-green
 	&:hover
 		color: $accent-green-deep
 
 .color-accent-blue
-	color: $accent-blue	
+	color: $accent-blue
 
-a.color-accent-blue	
+a.color-accent-blue
 	&:hover
 		color: $accent-blue-deep
 
 .color-accent-turquoise
-	color: $accent-turquoise		
+	color: $accent-turquoise
+
+.color-light-blue
+	color: $light-blue	
 
 .bg-accent-green
-	background: $accent-green		
+	background: $accent-green
 
 .bg-accent-blue
-	background: $accent-blue	
+	background: $accent-blue
 
-.bg-accent-turquoise	
-	background: $accent-turquoise		
+.bg-accent-turquoise
+	background: $accent-turquoise
 
 .bg-light-blue
-	background: $light-blue		
+	background: $light-blue
 
-.mb-25	
+.mb-25
 	margin-bottom: 25px
 
-.mb-46		
-	margin-bottom: 46px	
+.mb-32
+	margin-bottom: 32px	
 
-.mb-48		
+.mb-46
+	margin-bottom: 46px
+
+.mb-48
 	margin-bottom: 48px
 
 .mb-55
-	margin-bottom: 55px		
+	margin-bottom: 55px
 
 // slick slider	
 .slick-slider
 	width: 100%
+	position: relative
+	z-index: 1
 
 .slick-slide
 	outline: none
 
+.slick-arrow
+	width: 126px
+	height: 126px
+	min-width: 126px
+	background: $accent-blue
+	fill: #fff
+	border: none
+	cursor: pointer
+	transition: .3s ease
+	padding: 36px 35px
+
+
 .slider-nav
 	display: flex
 	align-items: center
+	width: fit-content
+	background: #fff
+	padding: 24px
 
 .slick-dots
 	width: fit-content
@@ -527,7 +614,7 @@ a.color-accent-blue
 		&:last-child
 			margin: 0
 		button
-			display: none		
+			display: none
 
 .counter-slide
 	display: flex
@@ -547,6 +634,75 @@ a.color-accent-blue
 		background: $dark
 		margin: 0 10px
 
+.list-social
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	li
+		margin: 0 16px 0 0
+		&:last-child
+			margin: 0
+		a
+			background: $accent-blue
+			fill: #fff
+			@include d-flex	
+			width: 62px
+			height: 62px
+			min-width: 62px
+			padding: 15px	
+			border: 1px solid $accent-blue
+			&:hover
+				background: #fff
+				fill: $accent-blue
+			&:focus
+				background: $accent-blue-deep
+				border-color: $accent-blue-deep
+				fill: #fff
+
+.page
+	position: relative
+	overflow: hidden
+	z-index: 1
+	color: #fff
+
+.page-wrapper
+	padding: 120px 0 106px		
+	position: relative
+	z-index: 1
+	.title-overlay
+		opacity: 0.1
+		top: -27px
+		transform: translate(-50%,0)		
+
+.nav-breadcrumb
+	width: 100%
+	margin: 0 0 16px
+
+.breadcrumb
+	width: 100%
+	display: flex
+	align-items: center
+	justify-content: center
+	flex-wrap: wrap
+	color: #fff
+	font-size: 16px
+	font-weight: 500
+	font-family: $default-font
+	margin: 4px 0
+	li
+		&.active
+			opacity: 0.5	
+			color: #fff	
+	a
+		color: #fff
+
+.breadcrumb-item+.breadcrumb-item
+	padding-left: 6px
+	&::before
+		content: '/'	
+		padding-right: 6px
+		color: #fff
+		opacity: 1
 
 //checkbox my
 .label-checkbox
