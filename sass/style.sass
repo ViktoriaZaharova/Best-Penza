@@ -85,7 +85,7 @@ input, textarea, select, .form-control
 		outline: none
 		box-shadow: none
 	&:focus
-		color: rgba($dark, .4)	
+		color: rgba($dark, .4)
 
 input[type="radio"], input[type="checkbox"]
 	width: auto
@@ -103,7 +103,7 @@ label
 	width: 100%
 	margin: 0 0 16px
 	font-weight: 500
-	text-align: left	
+	text-align: left
 
 textarea, textarea.form-control
 	resize: none
@@ -115,7 +115,7 @@ textarea, textarea.form-control
 	width: 100%
 	max-width: 735px
 	[type="submit"]
-		margin-left: auto
+	margin-left: auto
 
 .form-group
 	&.focus
@@ -123,7 +123,7 @@ textarea, textarea.form-control
 			color: $accent-blue-deep
 		input, textarea, .form-control
 			box-shadow: 4px 4px 0px 0px rgba(130, 187, 219, 0.50)
-			border-color: $accent-blue-deep	
+			border-color: $accent-blue-deep
 	&-error
 		color: #D076A1
 		input, textarea, .form-control
@@ -135,7 +135,6 @@ textarea, textarea.form-control
 		input, textarea, .form-control
 			color: rgba(21, 34, 80, 0.30)
 			border-color: rgba(21, 34, 80, 0.30)
-
 
 button, .btn
 	outline: none
@@ -490,7 +489,7 @@ blockquote
 		&:hover, &:focus, &:active, &.active
 			color: $accent-green
 		&.disabled, &:disabled
-			opacity: 0.5	
+			opacity: 0.5
 			color: $accent-green
 	&-blue
 		color: $accent-blue
@@ -499,8 +498,8 @@ blockquote
 		&:hover, &:focus, &:active, &.active
 			color: $accent-blue
 		&.disabled, &:disabled
-			opacity: 0.5	
-			color: $accent-blue		
+			opacity: 0.5
+			color: $accent-blue
 	&-turquoise
 		color: $accent-turquoise
 		svg
@@ -508,7 +507,7 @@ blockquote
 		&:hover, &:focus, &:active, &.active
 			color: $accent-turquoise
 		&.disabled, &:disabled
-			opacity: 0.5	
+			opacity: 0.5
 			color: $accent-turquoise
 	&-dark
 		color: $dark
@@ -517,8 +516,8 @@ blockquote
 		&:hover, &:focus, &:active, &.active
 			color: $dark
 		&.disabled, &:disabled
-			opacity: 0.5	
-			color: $dark				
+			opacity: 0.5
+			color: $dark
 
 .color-accent-green
 	color: $accent-green
@@ -538,7 +537,7 @@ a.color-accent-blue
 	color: $accent-turquoise
 
 .color-light-blue
-	color: $light-blue	
+	color: $light-blue
 
 .bg-accent-green
 	background: $accent-green
@@ -556,7 +555,10 @@ a.color-accent-blue
 	margin-bottom: 25px
 
 .mb-32
-	margin-bottom: 32px	
+	margin-bottom: 32px
+
+.mb-35
+	margin-bottom: 35px
 
 .mb-46
 	margin-bottom: 46px
@@ -566,6 +568,9 @@ a.color-accent-blue
 
 .mb-55
 	margin-bottom: 55px
+
+.mb-60
+	margin-bottom: 60px
 
 // slick slider	
 .slick-slider
@@ -587,6 +592,8 @@ a.color-accent-blue
 	transition: .3s ease
 	padding: 36px 35px
 
+.slick-arrow-green
+	background: $accent-green
 
 .slider-nav
 	display: flex
@@ -601,6 +608,8 @@ a.color-accent-blue
 	list-style: none
 	display: flex
 	align-items: center
+	position: relative
+	bottom: 0
 	li
 		cursor: pointer
 		border-radius: 50%
@@ -646,11 +655,11 @@ a.color-accent-blue
 		a
 			background: $accent-blue
 			fill: #fff
-			@include d-flex	
+			@include d-flex
 			width: 62px
 			height: 62px
 			min-width: 62px
-			padding: 15px	
+			padding: 15px
 			border: 1px solid $accent-blue
 			&:hover
 				background: #fff
@@ -669,9 +678,7 @@ a.color-accent-blue
 	.title-overlay
 		opacity: 0.1
 		top: -27px
-		transform: translate(-50%,0)		
-
-	
+		transform: translate(-50%,0)
 
 .nav-breadcrumb
 	width: 100%
@@ -690,18 +697,113 @@ a.color-accent-blue
 	margin: 4px 0
 	li
 		&.active
-			opacity: 0.5	
-			color: #fff	
+			opacity: 0.5
+			color: #fff
 	a
 		color: #fff
 
 .breadcrumb-item+.breadcrumb-item
 	padding-left: 6px
 	&::before
-		content: '/'	
+		content: '/'
 		padding-right: 6px
 		color: #fff
 		opacity: 1
+
+.list-filter
+	width: 100%
+	display: flex
+	align-items: center
+	justify-content: flex-end
+	flex-wrap: wrap
+	font-size: 24px
+	font-weight: bold
+	font-family: $title-font
+	li
+		margin: 0 24px 0 0
+		&:last-child
+			margin: 0
+		a
+			color: $dark-light
+			&:hover, &.active
+				color: $accent-green
+				text-decoration: underline
+
+.nav-pagination
+	width: 100%
+	margin: 5px 0 0
+
+.pagination
+	width: 100%
+	margin: 0
+	padding: 0
+	display: flex
+	align-items: center
+	justify-content: center
+
+	.page-item
+		margin: 0 4px 0 0
+		&:first-child, &:last-child
+			.page-link
+				border-radius: 0
+		&.active
+			.page-link
+				background: #fff
+				border-color: $accent-green
+				color: $accent-green
+	.page-link
+		box-shadow: none
+		padding: 8px 5px 2px
+		width: 50px
+		height: 50px
+		min-width: 50px
+		fill: #fff
+		@include d-flex
+		border: 1px solid transparent
+		color: $accent-green
+		background: #fff
+		font-size: 32px
+		font-weight: bold
+		font-family: $title-font
+		cursor: pointer
+		&:hover, &.active
+			background: #fff
+			border-color: $accent-green
+			color: $accent-green
+	.page-link-arrow
+		border: none
+		background: $accent-green
+		padding: 5px
+
+.amount
+	display: flex
+	align-items: center
+	justify-content: center
+	padding: 8px
+	width: 96px
+	border: 1px solid $accent-green
+	height: 50px
+	input
+		padding: 0
+		border: none
+		text-align: center
+		margin: 0 auto
+		font-size: 24px
+		font-weight: bold
+		color: $accent-green
+		font-family: $title-font
+		height: 50px
+		width: 24px
+		background: transparent
+	span
+		width: 24px
+		height: 24px
+		min-width: 24px
+		@include d-flex
+		stroke: $accent-green
+		cursor: pointer
+
+
 
 //checkbox my
 .label-checkbox

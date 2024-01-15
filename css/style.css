@@ -191,11 +191,8 @@ textarea, textarea.form-control {
   margin: 50px auto 0;
   width: 100%;
   max-width: 735px;
-}
-.form-callback [type=submit] {
   margin-left: auto;
 }
-
 .form-group.focus .label-title {
   color: #6fafd3;
 }
@@ -786,6 +783,10 @@ a.color-accent-blue:hover {
   margin-bottom: 32px;
 }
 
+.mb-35 {
+  margin-bottom: 35px;
+}
+
 .mb-46 {
   margin-bottom: 46px;
 }
@@ -796,6 +797,10 @@ a.color-accent-blue:hover {
 
 .mb-55 {
   margin-bottom: 55px;
+}
+
+.mb-60 {
+  margin-bottom: 60px;
 }
 
 .slick-slider {
@@ -819,6 +824,10 @@ a.color-accent-blue:hover {
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
   padding: 36px 35px;
+}
+
+.slick-arrow-green {
+  background: #a3d076;
 }
 
 .slider-nav {
@@ -847,6 +856,8 @@ a.color-accent-blue:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+  bottom: 0;
 }
 .slick-dots li {
   cursor: pointer;
@@ -994,6 +1005,148 @@ a.color-accent-blue:hover {
   padding-right: 6px;
   color: #fff;
   opacity: 1;
+}
+
+.list-filter {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Pobeda", sans-serif;
+}
+.list-filter li {
+  margin: 0 24px 0 0;
+}
+.list-filter li:last-child {
+  margin: 0;
+}
+.list-filter li a {
+  color: #5c637f;
+}
+.list-filter li a:hover, .list-filter li a.active {
+  color: #a3d076;
+  text-decoration: underline;
+}
+
+.nav-pagination {
+  width: 100%;
+  margin: 5px 0 0;
+}
+
+.pagination {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.pagination .page-item {
+  margin: 0 4px 0 0;
+}
+.pagination .page-item:first-child .page-link, .pagination .page-item:last-child .page-link {
+  border-radius: 0;
+}
+.pagination .page-item.active .page-link {
+  background: #fff;
+  border-color: #a3d076;
+  color: #a3d076;
+}
+.pagination .page-link {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 8px 5px 2px;
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+  fill: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid transparent;
+  color: #a3d076;
+  background: #fff;
+  font-size: 32px;
+  font-weight: bold;
+  font-family: "Pobeda", sans-serif;
+  cursor: pointer;
+}
+.pagination .page-link:hover, .pagination .page-link.active {
+  background: #fff;
+  border-color: #a3d076;
+  color: #a3d076;
+}
+.pagination .page-link-arrow {
+  border: none;
+  background: #a3d076;
+  padding: 5px;
+}
+
+.amount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 8px;
+  width: 96px;
+  border: 1px solid #a3d076;
+  height: 50px;
+}
+.amount input {
+  padding: 0;
+  border: none;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 24px;
+  font-weight: bold;
+  color: #a3d076;
+  font-family: "Pobeda", sans-serif;
+  height: 50px;
+  width: 24px;
+  background: transparent;
+}
+.amount span {
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  stroke: #a3d076;
+  cursor: pointer;
 }
 
 .label-checkbox {

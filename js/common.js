@@ -44,6 +44,39 @@ $(".reviews-slider").on('afterChange', function (event, slick, currentSlide) {
 	$(".reviews-slider__cp").text(currentSlide < 10 ? `0${currentSlide + 1}` : currentSlide + 1);
 });
 
+$('.product-card-slider').slick({
+	slidesToShow: 1,
+	fade: true,
+	arrows: false,
+	dots: true,
+	autoplay: true,
+	autoplaySpeed: 2000,
+});
+
+$('.recommended-products-slider').slick({
+	slidesToShow: 4,
+	prevArrow: '<button type="button" class="slick-prev slick-arrow-green"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',
+	nextArrow: '<button type="button" class="slick-next slick-arrow-green"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
+});
+
+$('.product-preview-slider').slick({
+	slidesToShow: 3,
+	arrows: false,
+	vertical: true,
+	focusOnSelect: true,
+	asNavFor: '.product-max-slider',
+});
+
+$('.product-max-slider').slick({
+	slidesToShow: 1,
+	fade: true,
+	dots: true,
+	arrows: true,
+	asNavFor: '.product-preview-slider',
+	prevArrow: '<button type="button" class="slick-prev slick-arrow-border-green"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',
+	nextArrow: '<button type="button" class="slick-next slick-arrow-border-green"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
+});
+
 Fancybox.bind("[data-fancybox]", {
 	// Your custom options
 });
@@ -61,4 +94,20 @@ $('.btn-toggle-news').on('click', function (e) {
 	if (onBlock <= 0) {
 		$(this).hide();
 	}
+});
+
+
+$('.amount .down').on("click", function () {
+	let $input = $(this).parent().find('input');
+	let count = parseInt($input.val()) - 1;
+	count = count < 1 ? 1 : count;
+	$input.val(count);
+	$input.change();
+	return false;
+});
+$('.amount .up').on("click", function () {
+	let $input = $(this).parent().find('input');
+	$input.val(parseInt($input.val()) + 1);
+	$input.change();
+	return false;
 });
