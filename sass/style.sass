@@ -591,9 +591,15 @@ a.color-accent-blue
 	cursor: pointer
 	transition: .3s ease
 	padding: 36px 35px
+	z-index: 2
 
 .slick-arrow-green
 	background: $accent-green
+
+.slick-arrow-border-green
+	border: 1px solid $accent-green
+	background: #fff
+	fill: $accent-green	
 
 .slider-nav
 	display: flex
@@ -696,11 +702,25 @@ a.color-accent-blue
 	font-family: $default-font
 	margin: 4px 0
 	li
+		display: flex
+		align-items: center
+		
 		&.active
 			opacity: 0.5
 			color: #fff
 	a
 		color: #fff
+		white-space: nowrap
+
+.breadcrumb-v2
+	justify-content: flex-start
+	li
+		&.active
+			color: rgba(21, 34, 80, 0.30)
+	a
+		color: $dark
+	.breadcrumb-item+.breadcrumb-item::before
+		color: $dark			
 
 .breadcrumb-item+.breadcrumb-item
 	padding-left: 6px
@@ -803,6 +823,33 @@ a.color-accent-blue
 		stroke: $accent-green
 		cursor: pointer
 
+.amount-v2
+	display: flex
+	align-items: center
+	padding: 16px
+	background: #fff
+	border: 1px solid $accent-green
+	height: 73px
+	min-width: 200px
+	margin: 0 auto 0 0
+	input
+		height: 100%
+		width: 100%
+		border: none
+		padding: 0
+		text-align: center
+		margin: 0 auto
+		font-size: 24px
+		font-weight: bold
+		color: $accent-green
+		font-family: $title-font
+	.down, .up
+		cursor: pointer
+		@include d-flex
+		width: 24px
+		min-width: 24px
+		height: 24px
+		stroke: $accent-green
 
 
 //checkbox my

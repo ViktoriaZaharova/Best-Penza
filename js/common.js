@@ -111,3 +111,21 @@ $('.amount .up').on("click", function () {
 	$input.change();
 	return false;
 });
+
+
+
+
+$('.amount-v2 .down').on("click", function () {
+	let $input = $(this).parent().find('input');
+	let count = parseInt($input.val()) - 1 + ' упаковка';
+	count = count < 1 ? 1 : count;
+	$input.val(count);
+	$input.change();
+	return false;
+});
+$('.amount-v2 .up').on("click", function () {
+	let $input = $(this).parent().find('input');
+	$input.val(parseInt($input.val()) + 1 + ' упаковка');
+	$input.change();
+	return false;
+});

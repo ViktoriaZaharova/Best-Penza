@@ -826,12 +826,12 @@
 	font-weight: 500
 
 .old-price, .new-price
-	margin: 0 0 8px	
+	margin: 0 0 8px
 
 .old-price
 	margin: 0 0 0 16px
-	text-decoration: line-through	
-	color: rgba(21, 34, 80, 0.30)			
+	text-decoration: line-through
+	color: rgba(21, 34, 80, 0.30)
 
 .list-characteristics
 	width: 100%
@@ -859,10 +859,10 @@
 		position: relative
 		background: #fff
 	p
-		padding: 0 16px 0 0	
+		padding: 0 16px 0 0
 	span
 		text-align: right
-		padding: 0 0 0 16px	
+		padding: 0 0 0 16px
 		margin: 0 0 0 auto
 
 .product-card-slider
@@ -890,7 +890,6 @@
 		img
 			max-height: 100%
 
-
 .list-labels
 	width: 100%
 	display: flex
@@ -913,6 +912,13 @@
 // product page
 .product-section
 	padding: 16px 0 120px
+	h1
+		margin: 45px 0 16px
+	.list-characteristics
+		margin: 16px 0 0
+		li
+			p, span
+				background: $light-blue	
 
 .product-wrapper
 	width: 100%
@@ -924,13 +930,58 @@
 .product-max-slider
 	width: calc(100% - 200px - 16px)
 	margin: 0 0 0 auto
-	
+	.slick-slide
+		background: #fff
+		height: 800px
+		width: 100%
+		border: 1px solid $accent-green
+		@include d-flex
+		img
+			height: 100%
+			width: fit-content
+			max-width: 100%
+	.slick-dots
+		position: absolute
+		bottom: 41px
+		left: 0
+		width: 100%
+		justify-content: center
+		li
+			background: $gray2
+			border: none
+			width: 8px
+			height: 8px
+			margin: 0 8px 0 0
 
+			&.slick-active
+				background: $accent-green
+	.slick-arrow
+		width: 95px
+		height: 95px
+		min-width: 95px
+		padding: 20px
+		position: absolute
+		bottom: 0
+		left: 0
+
+	.slick-next
+		left: 95px
 
 .product-preview-slider
-	max-width: 200px 
+	max-width: 200px
 	width: 100%
-
+	.slick-slide
+		margin: 0 0 16px
+		width: 100%
+		height: 256px
+		background: #fff
+		border: 1px solid $accent-green
+		cursor: pointer
+		img
+			width: fit-content
+			max-width: 100%
+			height: 100%
+			margin: 0 auto
 
 .recommended-products
 	padding: 115px 0
@@ -948,10 +999,41 @@
 	.slick-prev
 		left: -95px
 	.slick-next
-		right: -95px				
+		right: -95px
 	.slick-slide
 		padding: 0 12px
 	.slick-list
 		margin: 0 -12px
 
+.product-content
+	padding: 60px 40px 0
+	.box-text
+		margin: 16px 0 0
+	&__footer
+		margin: 24px 0 0
+		width: 100%
+		display: flex
+		align-items: flex-start
+	.price-wrapper
+		margin: 46px 0 0	
+		font-size: 32px
+		font-family: $title-font
+		font-weight: bold	
 
+.link-print
+	display: flex
+	align-items: center
+	margin: 0 0 16px
+	&:hover
+		color: $accent-blue
+		svg
+			fill: $accent-blue
+	svg
+		fill: $accent-green
+		margin: 0 0 0 4px
+		width: 24px
+		height: 24px
+		@include d-flex
+
+.product-content-box
+	margin: 45px 0 0

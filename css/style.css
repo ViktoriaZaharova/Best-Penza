@@ -824,10 +824,17 @@ a.color-accent-blue:hover {
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
   padding: 36px 35px;
+  z-index: 2;
 }
 
 .slick-arrow-green {
   background: #a3d076;
+}
+
+.slick-arrow-border-green {
+  border: 1px solid #a3d076;
+  background: #fff;
+  fill: #a3d076;
 }
 
 .slider-nav {
@@ -989,12 +996,36 @@ a.color-accent-blue:hover {
   font-family: "AvenirNextCyr", sans-serif;
   margin: 4px 0;
 }
+.breadcrumb li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 .breadcrumb li.active {
   opacity: 0.5;
   color: #fff;
 }
 .breadcrumb a {
   color: #fff;
+  white-space: nowrap;
+}
+
+.breadcrumb-v2 {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.breadcrumb-v2 li.active {
+  color: rgba(21, 34, 80, 0.3);
+}
+.breadcrumb-v2 a {
+  color: #152250;
+}
+.breadcrumb-v2 .breadcrumb-item + .breadcrumb-item::before {
+  color: #152250;
 }
 
 .breadcrumb-item + .breadcrumb-item {
@@ -1147,6 +1178,49 @@ a.color-accent-blue:hover {
           justify-content: center;
   stroke: #a3d076;
   cursor: pointer;
+}
+
+.amount-v2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 16px;
+  background: #fff;
+  border: 1px solid #a3d076;
+  height: 73px;
+  min-width: 200px;
+  margin: 0 auto 0 0;
+}
+.amount-v2 input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  padding: 0;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 24px;
+  font-weight: bold;
+  color: #a3d076;
+  font-family: "Pobeda", sans-serif;
+}
+.amount-v2 .down, .amount-v2 .up {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 24px;
+  min-width: 24px;
+  height: 24px;
+  stroke: #a3d076;
 }
 
 .label-checkbox {
