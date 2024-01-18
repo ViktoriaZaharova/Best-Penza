@@ -256,11 +256,13 @@ button:hover, button:focus, .btn:hover, .btn:focus {
   border-radius: 0;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
+  height: 50px;
 }
 
 .btn-md {
   padding: 24px 32px 16px;
   font-size: 32px;
+  height: 73px;
 }
 
 .btn-accent-blue {
@@ -549,6 +551,12 @@ blockquote {
   line-height: 32px;
   letter-spacing: 0.4px;
 }
+.text-article ul, .text-article p {
+  margin: 0 0 48px;
+}
+.text-article ul:last-child, .text-article p:last-child {
+  margin: 0;
+}
 
 .subtitle-text {
   font-size: 24px;
@@ -574,10 +582,10 @@ blockquote {
 }
 
 .row {
-  margin: 0 -16px;
+  margin: 0 -12px;
 }
 .row > * {
-  padding: 0 16px;
+  padding: 0 12px;
 }
 
 .dropdown-toggle {
@@ -775,6 +783,14 @@ a.color-accent-blue:hover {
   background: #f2f6f8;
 }
 
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.mb-24 {
+  margin-bottom: 24px;
+}
+
 .mb-25 {
   margin-bottom: 25px;
 }
@@ -785,6 +801,10 @@ a.color-accent-blue:hover {
 
 .mb-35 {
   margin-bottom: 35px;
+}
+
+.mb-42 {
+  margin-bottom: 42px;
 }
 
 .mb-46 {
@@ -801,6 +821,10 @@ a.color-accent-blue:hover {
 
 .mb-60 {
   margin-bottom: 60px;
+}
+
+.p-120 {
+  padding: 120px 0;
 }
 
 .slick-slider {
@@ -1223,6 +1247,71 @@ a.color-accent-blue:hover {
   stroke: #a3d076;
 }
 
+.label-radio {
+  width: 100%;
+  cursor: pointer;
+  color: #152250;
+  font-family: "AvenirNextCyr", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+}
+.label-radio input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border: 1px solid #152250;
+  border-radius: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.label-radio input:checked {
+  -webkit-box-shadow: 4px 4px 0px 0px rgba(130, 187, 219, 0.4);
+          box-shadow: 4px 4px 0px 0px rgba(130, 187, 219, 0.4);
+}
+.label-radio input:checked + .label-radio__custom::before {
+  opacity: 1;
+}
+.label-radio__custom {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  min-width: 18px;
+  border-radius: 50%;
+  margin: 0 18px 0 0;
+  border: 1px solid #152250;
+}
+.label-radio__custom::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #152250;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  opacity: 0;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
 .label-checkbox {
   position: relative;
   display: -webkit-box;
@@ -1232,9 +1321,10 @@ a.color-accent-blue:hover {
       -ms-flex-align: start;
           align-items: flex-start;
   color: rgba(255, 255, 255, 0.5);
-  font-size: 14px;
-  margin: 15px 0 0;
-  line-height: 1.14;
+  color: #152250;
+  font-family: "AvenirNextCyr", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .inp-check {
@@ -1255,4 +1345,31 @@ a.color-accent-blue:hover {
 .inp-check:checked ~ .checkbox-custom {
   background: #fff url("../img/check-black.svg") no-repeat center;
   background-size: 8px;
+}
+
+.label-file {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.label-file input {
+  display: none;
+}
+
+.list-label {
+  width: 100%;
+}
+.list-label li {
+  width: 100%;
+  margin: 0 0 24px;
+}
+.list-label li:last-child {
+  margin: 0;
 }

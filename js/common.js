@@ -77,6 +77,20 @@ $('.product-max-slider').slick({
 	nextArrow: '<button type="button" class="slick-next slick-arrow-border-green"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
 });
 
+$('.article-slider').slick({
+	slidesToShow: 3,
+	dots: true,
+	arrows: true,
+	appendDots: '.article-slider__nav',
+	appendArrows: '.article-slider__nav',
+	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',
+	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
+});
+
+$(".article-slider").on('afterChange', function (event, slick, currentSlide) {
+	$(".article-slider__cp").text(currentSlide < 10 ? `0${currentSlide + 1}` : currentSlide + 1);
+});
+
 Fancybox.bind("[data-fancybox]", {
 	// Your custom options
 });

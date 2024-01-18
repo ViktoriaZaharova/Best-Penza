@@ -164,10 +164,12 @@ button, .btn
 	border: 1px solid #fff
 	border-radius: 0
 	transition: 0.3s ease
+	height: 50px
 
 .btn-md
 	padding: 24px 32px 16px
 	font-size: 32px
+	height: 73px
 
 .btn-accent-blue
 	background: $accent-blue
@@ -394,6 +396,11 @@ blockquote
 	font-size: 20px
 	line-height: 32px
 	letter-spacing: 0.4px
+	ul, p
+		margin: 0 0 48px
+		&:last-child
+			margin: 0
+
 
 .subtitle-text
 	font-size: 24px
@@ -414,9 +421,9 @@ blockquote
 	padding: 0 25px
 
 .row
-	margin: 0 -16px
+	margin: 0 -12px
 	>*
-		padding: 0 16px
+		padding: 0 12px
 
 .dropdown-toggle
 	display: flex
@@ -551,6 +558,12 @@ a.color-accent-blue
 .bg-light-blue
 	background: $light-blue
 
+.mb-16
+	margin-bottom: 16px
+
+.mb-24
+	margin-bottom: 24px
+
 .mb-25
 	margin-bottom: 25px
 
@@ -559,6 +572,9 @@ a.color-accent-blue
 
 .mb-35
 	margin-bottom: 35px
+
+.mb-42
+	margin-bottom: 42px	
 
 .mb-46
 	margin-bottom: 46px
@@ -571,6 +587,9 @@ a.color-accent-blue
 
 .mb-60
 	margin-bottom: 60px
+
+.p-120	
+	padding: 120px 0	
 
 // slick slider	
 .slick-slider
@@ -599,7 +618,7 @@ a.color-accent-blue
 .slick-arrow-border-green
 	border: 1px solid $accent-green
 	background: #fff
-	fill: $accent-green	
+	fill: $accent-green
 
 .slider-nav
 	display: flex
@@ -704,7 +723,7 @@ a.color-accent-blue
 	li
 		display: flex
 		align-items: center
-		
+
 		&.active
 			opacity: 0.5
 			color: #fff
@@ -720,7 +739,7 @@ a.color-accent-blue
 	a
 		color: $dark
 	.breadcrumb-item+.breadcrumb-item::before
-		color: $dark			
+		color: $dark
 
 .breadcrumb-item+.breadcrumb-item
 	padding-left: 6px
@@ -851,16 +870,66 @@ a.color-accent-blue
 		height: 24px
 		stroke: $accent-green
 
-
 //checkbox my
+.label-radio
+	width: 100%
+	cursor: pointer
+	color: $dark
+	font-family: $default-font
+	font-size: 16px
+	font-weight: 500
+	display: flex
+	align-items: center
+	padding: 20px
+	position: relative
+	z-index: 1
+	input
+		position: absolute
+		left: 0
+		top: 0
+		z-index: -1
+		width: 100%
+		height: 100%
+		background: #fff
+		border: 1px solid $dark
+		border-radius: 0
+		appearance: none
+		transition: .3s ease
+		&:checked
+			box-shadow: 4px 4px 0px 0px rgba(130, 187, 219, 0.40)
+			+ .label-radio__custom
+				&::before
+					opacity: 1
+	&__custom
+		position: relative
+		width: 18px
+		height: 18px
+		min-width: 18px
+		border-radius: 50%
+		margin: 0 18px 0 0
+		border: 1px solid $dark
+		&::before
+			content: ''
+			position: absolute
+			left: 50%
+			top: 50%
+			transform: translate(-50%,-50%)
+			background: $dark
+			border-radius: 50%
+			width: 10px
+			height: 10px
+			opacity: 0
+			transition: .3s ease
+
 .label-checkbox
 	position: relative
 	display: flex
 	align-items: flex-start
 	color: rgba(255, 255, 255, 0.5)
-	font-size: 14px
-	margin: 15px 0 0
-	line-height: 1.14
+	color: $dark
+	font-family: $default-font
+	font-size: 16px
+	font-weight: 500
 
 .inp-check
 	display: none
@@ -879,3 +948,17 @@ a.color-accent-blue
 	background: #fff url("../img/check-black.svg") no-repeat center
 	background-size: 8px
 //checkbox my end
+
+.label-file
+	width: 100%
+	@include d-flex
+	input
+		display: none
+
+.list-label
+	width: 100%
+	li
+		width: 100%
+		margin: 0 0 24px
+		&:last-child
+			margin: 0
