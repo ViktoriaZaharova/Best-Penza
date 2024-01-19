@@ -257,6 +257,7 @@
 			width: 100%
 			height: 100%
 			object-fit: cover
+			border: 1px solid $accent-blue
 
 // our-production
 .our-production
@@ -1298,3 +1299,277 @@
 			object-fit: cover
 			border: 1px solid $accent-blue
 
+// about page
+.page-about
+	padding: 120px 0 0
+	.nav-tabs
+		margin: 70px 0 -1px
+
+.tehnology-wrapper
+	position: relative
+	z-index: 1
+	margin: 58px 0 0
+	background: $light-blue
+	.decor-line1
+		height: 776px
+		width: 1px
+		left: 0
+		top: 50%
+		transform: translate(0,-50%)
+		background: url('../img/line1.svg') no-repeat center top
+		background-size: 100%
+		z-index: 1
+		display: block
+
+.tehnology-image
+	position: relative
+	margin: -130px 42px 0 auto
+	z-index: 1
+	mix-blend-mode: multiply
+	max-width: 1353px
+	width: 100%
+	.text-overlay
+		position: absolute
+		z-index: 1
+		text-align: center
+		width: 100%
+		bottom: 0
+		opacity: 0.2
+		color: #D8E0E5
+	img
+		mix-blend-mode: multiply
+
+.tehnology-box
+	padding: 24px
+	background: #fff
+	border: 1px solid $accent-blue
+	max-width: 395px
+	&.tehnology-box1
+		text-align: right
+		margin-left: auto
+	&.tehnology-box2
+		text-align: left
+		max-width: 458px
+
+.properties
+	background: url('../img//properties-bg.jpg') no-repeat center
+	background-size: cover
+	padding: 120px 0 0
+	position: relative
+	z-index: 1
+	overflow: hidden
+	.decor-line1
+		width: 217px
+	.decor-line2
+		height: 120px
+	.decor-line3
+		width: 120px
+	.decor-line4
+		height: 120px
+	&-overlay
+		max-width: none
+		background: rgba(78, 137, 119, 0.20)
+	&-wrapper
+		background: rgba(78, 137, 119, 0.30)
+		color: #fff
+		text-align: left
+	.text-overlay
+		text-align: left
+	h2
+		margin: 0 0 32px
+	h3
+		margin: 0 0 8px
+	.list-cube
+		display: flex
+		align-items: flex-start
+		flex-wrap: wrap
+		max-width: 370px
+		text-transform: capitalize
+		font-weight: 500
+		li
+			padding: 16px 0
+			margin: 0 32px 0 0
+			&:last-child
+				margin: 0
+
+.vitamins-section
+	h3
+		margin: 0 0 8px
+	.box-text
+		max-width: 390px
+
+.list-vitamins
+	width: 100%
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+
+.vitamins-item
+	margin: 0 24px 16px 0
+	padding: 16px 16px 0px 16px
+	height: 96px
+	text-align: center
+	background: #fff
+	border: 1px solid $accent-turquoise
+	span
+		margin: 0 auto 8px
+		display: block
+		font-size: 11px
+		font-weight: 500
+	.h2
+		color: $accent-turquoise
+	&:last-child
+		margin: 0 0 16px
+
+.influence
+	position: relative
+	z-index: 1
+	padding: 122px 0 108px
+	background: #fff url('../img/influence-bg.png') no-repeat 129px bottom
+	background-size: 1072px
+	&::before
+		content: ''
+		position: absolute
+		z-index: -1
+		height: 100%
+		background: $light-blue
+		width: 316px
+		left: 0
+		top: 0
+	h2
+		margin: 0 0 32px
+
+.influence-wrapper
+	width: 100%
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+
+.influence-box
+	padding: 24px
+	max-width: 354px
+	width: 100%
+	background: rgba(#fff, .8)
+	backdrop-filter: blur(7.5px)
+	border: 1px solid transparent
+	margin: 0 24px 17px 0
+	&:first-child
+		margin: 40px 24px 17px 0
+	&:last-child
+		margin: 0 0 0 125px
+	h3
+		margin: 0 0 24px
+	&-green
+		border-color: $accent-green
+		h3
+			color: $accent-green
+	&-blue
+		border-color: $accent-blue
+		h3
+			color: $accent-blue
+	&-turquoise
+		border-color: $accent-turquoise
+		h3
+			color: $accent-turquoise
+
+.influence-content
+	margin: 72px 0 0
+	max-width: 440px
+	.box-text
+		p
+			margin: 0 0 32px
+			&:last-child
+				margin: 0
+
+.about-video
+	padding: 120px 0 170px
+
+.about-video-box
+	max-width: none
+	width: 100%
+	height: 796px
+
+.history-company
+	position: relative
+	z-index: 1
+	padding: 143px 0 120px
+	background: $light-blue url('../img/history-bg.png') no-repeat left top
+	background-size: 1072px
+
+.history-company-list
+	width: 100%
+	position: relative
+	z-index: 1
+	&::before, &:after
+		content: ''
+		background: $accent-blue
+		border-radius: 50%
+		width: 8px
+		height: 8px
+		position: absolute
+		right: 626px
+	&::before
+		top: 0
+	&::after
+		bottom: 0	
+
+.history-company-box
+	width: 100%
+	display: flex
+	align-items: stretch
+	flex-wrap: wrap
+	position: relative
+	padding: 0 0 120px
+	&::before
+		content: ''
+		position: absolute
+		height: 100%
+		width: 1px
+		background: $accent-blue
+		right: 630px
+	h3
+		margin: 0 0 8px
+	.h1
+		font-size: 140px
+		line-height: 124px	
+		margin: 0 0 -24px
+	&:last-child
+		padding: 0
+	&:nth-child(even)
+		.history-company-box
+			&__date
+				max-width: 630px
+				width: 100%
+				padding: 0 0 0 54px
+				text-align: left
+				order: 1
+				&::before
+					right: auto
+					left: -4px
+			&__content
+				width: calc(100% - 630px)
+				padding: 0 54px 0 0
+				text-align: right
+				
+	&__date
+		padding: 0 54px 0 0
+		width: calc(100% - 630px)
+		text-align: right
+		color: $accent-blue
+		position: relative
+		&::before
+			content: ''
+			position: absolute
+			top: 50%
+			right: -4px
+			transform: translate(0,-50%)
+			background: $accent-blue
+			width: 8px
+			height: 40px
+	&__content
+		padding: 6px 0 6px 54px
+		max-width: 630px
+		width: 100%
+		display: flex
+		flex-direction: column
+		justify-content: center

@@ -451,6 +451,24 @@ ul, ol {
   list-style-type: disc;
 }
 
+.list-cube li {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.list-cube li::before {
+  content: "";
+  background: #fff;
+  margin: 0 8px 0 0;
+  width: 4px;
+  height: 4px;
+  min-width: 4px;
+}
+
 h1, .h1 {
   width: 100%;
   margin: 0;
@@ -1372,4 +1390,35 @@ a.color-accent-blue:hover {
 }
 .list-label li:last-child {
   margin: 0;
+}
+
+.nav-tabs {
+  width: 100%;
+  border: none;
+  border-radius: 0;
+}
+.nav-tabs .nav-item {
+  margin: 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.nav-tabs .nav-link {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  padding: 24px 24px 16px;
+  height: auto;
+  font-family: "Pobeda", sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: normal;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 0;
+}
+.nav-tabs .nav-link.active {
+  background: #fff;
+  color: #87c3e5;
+  border-color: #fff;
 }
