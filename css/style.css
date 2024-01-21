@@ -1370,6 +1370,7 @@ a.color-accent-blue:hover {
 
 .label-file {
   width: 100%;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

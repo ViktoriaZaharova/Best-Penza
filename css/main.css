@@ -1138,6 +1138,7 @@
   z-index: 1;
   background: #fff;
   border: 1px solid #a3d076;
+  overflow: hidden;
 }
 .product-card__img {
   width: 100%;
@@ -1250,6 +1251,7 @@
   text-align: right;
   padding: 0 0 0 16px;
   margin: 0 0 0 auto;
+  white-space: nowrap;
 }
 
 .product-card-slider {
@@ -1428,6 +1430,7 @@
 
 .recommended-products {
   padding: 115px 0;
+  overflow: hidden;
 }
 
 .recommended-products-slider {
@@ -1619,6 +1622,9 @@
   font-size: 32px;
   font-weight: bold;
   margin: 0 0 0 auto;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 .product-card-row .old-price, .product-card-row .new-price {
   margin: 0;

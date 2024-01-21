@@ -34,6 +34,16 @@
 						<span class="logo-text">Бест Пенза</span>
 					</a>
 					<nav class="nav nav-menu">
+						<div class="nav-menu__header">
+							<a href="index.html" class="logo">
+								<span class="logo-icon"><img src="img/logo.png" alt=""></span>
+								<span class="logo-text">Бест Пенза</span>
+							</a>
+							<div class="nav-menu__close"><svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#close"></use>
+								</svg></div>
+						</div>
+
 						<ul class="menu my-ul">
 							<li class="dropdown nav-item"><a href="about.html" class="dropdown-toggle nav-link"
 									data-bs-toggle="dropdown">О компании</a>
@@ -52,6 +62,17 @@
 							<li class="nav-item"><a href="contacts.html" class="nav-link">Контакты</a></li>
 							<li class="nav-item"><a href="reviews.html" class="nav-link">Отзывы</a></li>
 						</ul>
+						<div class="header-contacts">
+							<a href="tel:88005556814" class="phone">8-(800)-555-68-14</a>
+							<a href="#" class="color-accent-green text-decoration link-callback" data-bs-toggle="modal"
+								data-bs-target="#callbackModal">Заказать обратный звонок</a>
+						</div>
+
+						<a href="basket.html" class="btn-basket"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#basket"></use>
+							</svg>
+							<span>Корзина</span>
+						</a>
 					</nav>
 					<div class="header-contacts">
 						<a href="tel:88005556814" class="phone">8-(800)-555-68-14</a>
@@ -75,6 +96,23 @@
 	<section class="product-section bg-light-blue">
 		<div class="container">
 			<div class="row">
+				<div class="col-12 d-block d-lg-none">
+					<a href="#" class="link-print color-accent-green" target="_blank">
+						<span>Версия для печати</span>
+						<svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#print"></use>
+						</svg>
+					</a>
+					<nav aria-label="breadcrumb" class="nav-breadcrumb">
+						<ol class="breadcrumb breadcrumb-v2">
+							<li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+							<li class="breadcrumb-item"><a href="category.html">Каталог товаров</a></li>
+							<li class="breadcrumb-item"><a href="catalog.html">Алоэ вера</a></li>
+							<li class="breadcrumb-item active" aria-current="page">Алоэ вера оригинал</li>
+						</ol>
+					</nav>
+				</div>
+
 				<div class="col-12 col-lg-7">
 					<div class="product-wrapper">
 						<ul class="list-labels my-ul">
@@ -97,20 +135,23 @@
 
 				<div class="col-12 col-lg-5">
 					<div class="product-content">
-						<a href="#" class="link-print color-accent-green" target="_blank">
-							<span>Версия для печати</span>
-							<svg class="svg-icon">
-								<use xlink:href="img/sprite.svg#print"></use>
-							</svg>
-						</a>
-						<nav aria-label="breadcrumb" class="nav-breadcrumb">
-							<ol class="breadcrumb breadcrumb-v2">
-								<li class="breadcrumb-item"><a href="index.html">Главная</a></li>
-								<li class="breadcrumb-item"><a href="category.html">Каталог товаров</a></li>
-								<li class="breadcrumb-item"><a href="catalog.html">Алоэ вера</a></li>
-								<li class="breadcrumb-item active" aria-current="page">Алоэ вера оригинал</li>
-							</ol>
-						</nav>
+						<div class="col-12 d-none d-lg-block">
+							<a href="#" class="link-print color-accent-green" target="_blank">
+								<span>Версия для печати</span>
+								<svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#print"></use>
+								</svg>
+							</a>
+							<nav aria-label="breadcrumb" class="nav-breadcrumb">
+								<ol class="breadcrumb breadcrumb-v2">
+									<li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+									<li class="breadcrumb-item"><a href="category.html">Каталог товаров</a></li>
+									<li class="breadcrumb-item"><a href="catalog.html">Алоэ вера</a></li>
+									<li class="breadcrumb-item active" aria-current="page">Алоэ вера оригинал</li>
+								</ol>
+							</nav>
+						</div>
+
 						<h1 class="h2">алоэ вера оригинал 1.5л - упаковка 12 шт</h1>
 						<ul class="list-characteristics my-ul">
 							<li>
@@ -521,6 +562,65 @@
 			</div>
 		</div>
 	</footer>
+
+	<!-- Модальное окно -->
+	<div class="modal fade" id="callbackModal" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+
+			<div class="modal-content">
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть">
+					<svg class="svg-icon">
+						<use xlink:href="img/sprite.svg#modal-close"></use>
+					</svg>
+				</button>
+				<div class="dealers-overlay modal-overlay callback-overlay">
+					<div class="decor-line decor-line1"></div>
+					<div class="decor-line decor-line2"></div>
+					<div class="decor-line decor-line3"></div>
+					<div class="decor-line decor-line4"></div>
+					<div class="dealers-wrapper modal-wrapper callback-wrapper">
+						<div class="modal-header">
+							<div class="modal-title h2">Хотите заказать обратный звонок?</div>
+							<div class="box-text">
+								<p>Оставьте Ваши контактные данные и наш менеджер свяжется с Вами в течение получаса</p>
+							</div>
+
+						</div>
+						<div class="modal-body">
+							<form method="post" class="form-callback">
+								<div class="row">
+									<div class="col-12 col-md-6 mb-32">
+										<div class="form-group">
+											<div class="label-title">Имя*</div>
+											<label><input type="text" placeholder="Введите Ваше имя" name="name" required
+													class="form-control"></label>
+										</div>
+									</div>
+									<div class="col-12 col-md-6 mb-32">
+										<div class="form-group">
+											<div class="label-title">Телефон</div>
+											<label><input type="text" placeholder="Введите Ваше имя" name="phone" required
+													class="form-control"></label>
+										</div>
+									</div>
+								</div>
+								<div class="row align-items-center">
+									<div class="col-12 col-md-6 col-lg-7">
+										<div class="consent font-500">
+											<p>Нажимая кнопку «Отправить» Вы даете свое согласие на обработку персональных данных</p>
+										</div>
+									</div>
+									<div class="col-12 col-md-6 col-lg-5">
+										<button type="submit" class="btn btn-md btn-accent-blue">отправить</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<!-- Модальное окно -->
 	<div class="modal fade" id="callbackModal" tabindex="-1" aria-hidden="true">

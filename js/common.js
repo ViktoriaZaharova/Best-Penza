@@ -16,6 +16,8 @@ $('.home-bg-slider').slick({
 	arrows: false,
 	swipe: false,
 	infinite: false,
+	autoplay: true,
+	autoplaySpeed: 2000,
 });
 
 $('.home-slider').slick({
@@ -77,6 +79,20 @@ $('.recommended-products-slider').slick({
 	slidesToShow: 4,
 	prevArrow: '<button type="button" class="slick-prev slick-arrow-green"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',
 	nextArrow: '<button type="button" class="slick-next slick-arrow-green"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
+	responsive: [
+		{
+			breakpoint: 1200,
+			settings: {
+				slidesToShow: 3,
+			}
+		},
+		{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 2,
+			}
+		}
+	]
 });
 
 $('.product-preview-slider').slick({

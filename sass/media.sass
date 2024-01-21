@@ -1,6 +1,31 @@
 /*==========	Desktop First	==========*/
 
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1700px)
+	.recommended-products-slider
+		padding: 0 0 111px
+		.slick-slide
+			padding: 0 8px
+		.slick-arrow
+			top: auto
+			bottom: 0
+			transform: none
+		.slick-prev
+			left: calc(50% - 8px - 95px)
+		.slick-next
+			right: calc(50% - 8px - 95px)
+
+@media only screen and (max-width: 1500px)
+	.product-card-row .old-price
+		margin: 0 16px 0 0
+
+	.product-card-row__body
+		padding: 0 16px
+		width: 315px
+
+	.product-card-row
+		padding: 24px
+
 @media only screen and (max-width: 1400px)
 	.menu
 		font-size: 14px
@@ -14,7 +39,14 @@
 		font-size: 220px
 
 	.advantages-work h2
-		margin: 70px 0 35px	
+		margin: 70px 0 35px
+
+	.product-card-row
+		padding: 16px
+		.price-wrapper
+			flex-direction: column
+			.old-price
+				margin: 0 0 8px
 
 @media only screen and (max-width: 1360px)
 	.footer-column-address
@@ -88,9 +120,9 @@
 		font-size: 180px
 		line-height: normal
 
-	.advantages-work 
+	.advantages-work
 		padding: 64px 0
-		h2	
+		h2
 			margin: 0 0 16px
 			width: 100%
 		&__img1
@@ -98,7 +130,7 @@
 			max-width: none
 		&__img2
 			margin: 16px 0
-			max-width: none	
+			max-width: none
 			border: 1px solid #87C3E5
 			z-index: -1
 
@@ -110,10 +142,7 @@
 	.advantages-work-list-item
 		position: relative
 		z-index: 2
-		background: #fff	
-
-		
-			
+		background: #fff
 
 @media only screen and (max-width: 1200px)
 	.home-image-slider
@@ -155,12 +184,20 @@
 	.footer-column-address
 		max-width: none
 
-	.footer-column:last-child	
+	.footer-column:last-child
 		margin: 54px 0 0
 
 	.modal-content
 		padding: 64px 16px
 
+	.form-basket-total
+		margin: 10px 0 0
+
+	.form-basket .consent
+		max-width: 315px
+
+	.product-content
+		padding: 16px 0 0
 
 @media only screen and (max-width: 992px)
 	.box-text-md
@@ -289,17 +326,48 @@
 	.footer-column
 		&:first-child
 			width: 100%
-			margin: 0 0 54px	
+			margin: 0 0 54px
 
 	.map
-		max-width: none	
+		max-width: none
 
 	.modal-dialog .btn-close
 		right: 41px
-		top: 89px			
+		top: 89px
 
-	.our-news
-		padding: 64px 0	
+	.our-news, .basket-section, .recommended-products
+		padding: 64px 0
+
+	.product-card-row__title
+		font-size: 24px
+		line-height: normal
+
+	.product-card-row__body
+		width: 250px
+
+	.basket-section
+		h1
+			color: #152250
+
+	.recommended-products-slider
+		padding: 0 0 80px
+		.slick-arrow
+			padding: 5px
+			width: 64px
+			height: 64px
+			min-width: 64px
+		.slick-prev
+			left: calc(50% - 64px - 8px)
+		.slick-next
+			right: calc(50% - 64px - 8px)
+
+	.product-section
+		padding: 32px 0 64px
+		h1
+			margin: 0 0 16px
+
+	.product-content-box
+		margin: 40px 0 0
 
 @media only screen and (max-width: 768px)
 	.home
@@ -375,18 +443,17 @@
 				margin: 0 0 0 auto
 
 	.callback-section
-		padding: 64px 0 0		
+		padding: 64px 0 0
 
 	.form-callback
-		[type="submit"]
+		[type='submit']
 			margin: 30px 0 0
 
 	.consent
 		max-width: none
 
-	.page
-		padding: 64px 0	
-			
+	.page, .payments-section
+		padding: 64px 0
 
 	.contacts-section
 		padding: 64px 0 48px
@@ -397,8 +464,84 @@
 			padding: 16px
 			height: 450px
 
-		
-	
+	.payments-card
+		padding: 32px
+		&__description
+			margin: 32px 0 0
+
+	.payments-card-box
+		margin: 32px 0 0
+
+	.delivery-section
+		padding: 64px 0
+
+	.product-card-row
+		flex-wrap: wrap
+		&__img
+			width: 90px
+			margin: 0 0 16px
+		&__body
+			padding: 0 0 0 16px
+			width: calc(100% - 90px)
+			margin: 0 0 16px
+		.price-wrapper
+			margin: 0
+			font-size: 24px
+		.btn-clear
+			margin: 0 auto
+		.amount
+			margin: 0
+			order: 1
+
+	.checkout-section
+		margin: 64px 0 0
+
+	.form-basket
+		.consent
+			max-width: none
+		[type='submit']
+			margin: 24px 0 0
+
+	.product-card
+		font-size: 14px
+		&__img
+			height: 193px
+		&__body
+			padding: 12px
+		&__title
+			font-size: 20px
+			line-height: normal
+		.price-wrapper
+			font-size: 14px
+
+	.product-card-slider__img
+		height: 193px
+
+	.product-card-slider .slick-dots
+		padding: 0 0 5px
+		li
+			width: 3px
+			height: 3px
+			margin: 0 3px 0 0
+
+	.product-preview-slider
+		display: none	
+
+	.product-max-slider
+		width: 100%
+		.slick-arrow
+			width: 64px
+			height: 64px
+			min-width: 64px
+			padding: 5px
+		.slick-next
+			left: auto
+			right: 0		
+		.slick-dots
+			bottom: 30px
+		.slick-slide
+			height: 370px
+						
 
 @media only screen and (max-width: 576px)
 	header
@@ -413,7 +556,7 @@
 		margin-bottom: 16px
 
 	.mb-32
-		margin-bottom: 24px	
+		margin-bottom: 24px
 
 	.mb-48
 		margin-bottom: 24px
@@ -427,7 +570,7 @@
 	.title-overlay
 		display: flex
 		align-items: center
-		justify-content: center	
+		justify-content: center
 
 	.text-overlay
 		font-size: 97.5px
@@ -517,7 +660,7 @@
 				width: 33px
 
 	.reviews-card .box-text
-		margin: 24px 0 0		
+		margin: 24px 0 0
 
 	.callback-section
 		background-size: 750px
@@ -535,17 +678,17 @@
 				display: none
 
 	.form-callback
-		margin: 30px auto 0	
-		[type="submit"]
+		margin: 30px auto 0
+		[type='submit']
 			width: 100%
 
 	footer
 		.btn-md
 			padding: 14px 24px 10px
 			height: 50px
-			font-size: 24px	
+			font-size: 24px
 		.phone
-			margin: 24px 0		
+			margin: 24px 0
 
 	.footer-column
 		width: 100%
@@ -554,17 +697,17 @@
 			margin: 0
 
 	.footer-logo
-		margin: 0 0 24px		
+		margin: 0 0 24px
 
 	.map
-		height: 300px	
+		height: 300px
 
 	.modal-wrapper
-		padding: 64px 16px		
+		padding: 64px 16px
 
 	.modal-title
 		font-size: 40px
-		line-height: 40px		
+		line-height: 40px
 
 	.modal-dialog
 		margin: 20px auto
@@ -572,18 +715,18 @@
 	.modal-content
 		background-size: 750px
 		background-position: center bottom
-		border: none		
+		border: none
 
 	.address-manufacturer
 		&__map
-			height: 300px	
+			height: 300px
 
 	.advantages-work h2
 		font-size: 40px
 		line-height: 40px
 
 	.advantages-work__img
-		padding: 16px		
+		padding: 16px
 
 	.advantages-work-list-item
 		width: 100%
@@ -592,7 +735,63 @@
 			border-bottom: 1px solid #87C3E5
 		&:nth-child(odd)
 			border-right: 1px solid #87C3E5
-				
+
+	.form-basket-total
+		.btn-checkout
+			height: auto
+		.form-row
+			flex-wrap: wrap
+			.btn
+				width: 100%
+
+	.list-characteristics
+		p
+			padding: 0 10px 0 0
+		span
+			padding: 0 0 0 10px
+
+	.form-basket [type='submit']
+		width: 100%
+
+	.product-card
+		.amount
+			display: none
+		.price-wrapper
+			font-size: 10px
+		&__footer
+			.btn
+				margin: 0
+		.old-price
+			margin: 0 0 0 8px
+		.new-price
+			margin: 0
+		.list-characteristics
+			margin: 8px 0
+			font-size: 8px
+
+	.product-content
+		&__footer
+			flex-wrap: wrap
+
+	.amount-v2
+		width: 100%
+		margin: 0 0 16px
+		height: 56px
+
+	.btn-add-card
+		margin: 0	
+
+	.product-section h1
+		font-size: 40px
+		line-height: normal
+
+	.product-content .price-wrapper
+		margin: 40px 0 0
+
+	.recommended-products
+		h2
+			font-size: 40px
+			line-height: normal		
 
 @media only screen and (max-width: 480px)
 
@@ -648,21 +847,19 @@
 	.slick-arrow
 		width: 50px
 		height: 50px
-		min-width: 50px	
+		min-width: 50px
 
 	.footer-logo
-		font-size: 60px		
+		font-size: 60px
 
 	.modal-wrapper
-		padding: 64px 16px		
+		padding: 64px 16px
 
 	.modal-title
 		font-size: 35px
-		line-height: normal		
+		line-height: normal
 
-	.address-manufacturer, .callback-section 
+	.address-manufacturer, .callback-section
 		h2
-			font-size: 52px	
+			font-size: 52px
 			line-height: normal
-
-			
