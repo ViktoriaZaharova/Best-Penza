@@ -100,7 +100,7 @@ header {
   padding: 0;
   color: #152250;
 }
-.menu .nav-link:hover {
+.menu .nav-link:hover, .menu .nav-link.active {
   color: #87c3e5;
 }
 

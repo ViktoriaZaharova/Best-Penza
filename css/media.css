@@ -14,6 +14,9 @@
   .about .title-overlay {
     font-size: 220px;
   }
+  .advantages-work h2 {
+    margin: 70px 0 35px;
+  }
 }
 @media only screen and (max-width: 1360px) {
   .footer-column-address {
@@ -102,6 +105,34 @@
   .about .title-overlay {
     font-size: 180px;
     line-height: normal;
+  }
+  .advantages-work {
+    padding: 64px 0;
+  }
+  .advantages-work h2 {
+    margin: 0 0 16px;
+    width: 100%;
+  }
+  .advantages-work__img1 {
+    margin: 0 0 16px;
+    max-width: none;
+  }
+  .advantages-work__img2 {
+    margin: 16px 0;
+    max-width: none;
+    border: 1px solid #87C3E5;
+    z-index: -1;
+  }
+  .advantages-work-column {
+    width: 100%;
+  }
+  .advantages-work-column:nth-child(2) {
+    margin: 0;
+  }
+  .advantages-work-list-item {
+    position: relative;
+    z-index: 2;
+    background: #fff;
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -306,6 +337,9 @@
     right: 41px;
     top: 89px;
   }
+  .our-news {
+    padding: 64px 0;
+  }
 }
 @media only screen and (max-width: 768px) {
   .home {
@@ -398,6 +432,19 @@
   .consent {
     max-width: none;
   }
+  .page {
+    padding: 64px 0;
+  }
+  .contacts-section {
+    padding: 64px 0 48px;
+  }
+  .address-manufacturer {
+    padding: 64px 0;
+  }
+  .address-manufacturer__map {
+    padding: 16px;
+    height: 450px;
+  }
 }
 @media only screen and (max-width: 576px) {
   header .header-contacts, header .btn-basket {
@@ -421,6 +468,17 @@
   }
   .container-fluid {
     padding: 0 16px;
+  }
+  .title-overlay {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .text-overlay {
     font-size: 97.5px;
@@ -518,6 +576,9 @@
   .reviews-slider__nav .counter-slide::before {
     width: 33px;
   }
+  .reviews-card .box-text {
+    margin: 24px 0 0;
+  }
   .callback-section {
     background-size: 750px;
     background-position: center bottom;
@@ -578,6 +639,26 @@
     background-position: center bottom;
     border: none;
   }
+  .address-manufacturer__map {
+    height: 300px;
+  }
+  .advantages-work h2 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .advantages-work__img {
+    padding: 16px;
+  }
+  .advantages-work-list-item {
+    width: 100%;
+    border-bottom: none;
+  }
+  .advantages-work-list-item:last-child {
+    border-bottom: 1px solid #87C3E5;
+  }
+  .advantages-work-list-item:nth-child(odd) {
+    border-right: 1px solid #87C3E5;
+  }
 }
 @media only screen and (max-width: 370px) {
   .btn-md {
@@ -630,11 +711,18 @@
     height: 50px;
     min-width: 50px;
   }
+  .footer-logo {
+    font-size: 60px;
+  }
   .modal-wrapper {
     padding: 64px 16px;
   }
   .modal-title {
     font-size: 35px;
+    line-height: normal;
+  }
+  .address-manufacturer h2, .callback-section h2 {
+    font-size: 52px;
     line-height: normal;
   }
 }

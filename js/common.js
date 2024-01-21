@@ -1,5 +1,15 @@
 $('[name="phone"]').mask('+7 (999) 999-99-99');
 
+// активная ссылка меню
+$('.menu li a').each(function () {
+	let location = window.location.href;
+	let link = this.href;
+	if (location === link) {
+		$(this).addClass('active');
+	}
+});
+// end
+
 $('.home-bg-slider').slick({
 	slidesToShow: 1,
 	fade: true,

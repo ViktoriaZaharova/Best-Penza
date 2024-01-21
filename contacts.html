@@ -34,6 +34,16 @@
 						<span class="logo-text">Бест Пенза</span>
 					</a>
 					<nav class="nav nav-menu">
+						<div class="nav-menu__header">
+							<a href="index.html" class="logo">
+								<span class="logo-icon"><img src="img/logo.png" alt=""></span>
+								<span class="logo-text">Бест Пенза</span>
+							</a>
+							<div class="nav-menu__close"><svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#close"></use>
+								</svg></div>
+						</div>
+
 						<ul class="menu my-ul">
 							<li class="dropdown nav-item"><a href="about.html" class="dropdown-toggle nav-link"
 									data-bs-toggle="dropdown">О компании</a>
@@ -52,6 +62,17 @@
 							<li class="nav-item"><a href="contacts.html" class="nav-link">Контакты</a></li>
 							<li class="nav-item"><a href="reviews.html" class="nav-link">Отзывы</a></li>
 						</ul>
+						<div class="header-contacts">
+							<a href="tel:88005556814" class="phone">8-(800)-555-68-14</a>
+							<a href="#" class="color-accent-green text-decoration link-callback" data-bs-toggle="modal"
+								data-bs-target="#callbackModal">Заказать обратный звонок</a>
+						</div>
+
+						<a href="basket.html" class="btn-basket"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#basket"></use>
+							</svg>
+							<span>Корзина</span>
+						</a>
 					</nav>
 					<div class="header-contacts">
 						<a href="tel:88005556814" class="phone">8-(800)-555-68-14</a>
@@ -78,7 +99,7 @@
 			<div class="row">
 				<div class="col-12 text-center">
 					<div class="page-wrapper">
-						
+
 						<nav aria-label="breadcrumb" class="nav-breadcrumb">
 							<ol class="breadcrumb">
 								<li class="breadcrumb-item"><a href="index.html">Главная</a></li>
@@ -96,7 +117,7 @@
 		<div class="container">
 
 			<div class="row">
-				<div class="col-12 col-lg-6 col-xl-3 mb-25">
+				<div class="col-12 col-md-6 col-xl-3 mb-25">
 					<div class="contacts-box">
 						<div class="contacts-box__icon">
 							<svg class="svg-icon">
@@ -108,7 +129,7 @@
 						<a href="tel:89282296257" class="contacts-box__link">8-(928)-229-62-57</a>
 					</div>
 				</div>
-				<div class="col-12 col-lg-6 col-xl-3 mb-25">
+				<div class="col-12 col-md-6 col-xl-3 mb-25">
 					<div class="contacts-box">
 						<div class="contacts-box__icon">
 							<svg class="svg-icon">
@@ -119,7 +140,7 @@
 						<a href="mailto:info@aloevera.com" class="contacts-box__link">info@aloevera.com</a>
 					</div>
 				</div>
-				<div class="col-12 col-lg-6 col-xl-3 mb-25">
+				<div class="col-12 col-md-6 col-xl-3 mb-25">
 					<div class="contacts-box">
 						<div class="contacts-box__icon">
 							<svg class="svg-icon">
@@ -130,7 +151,7 @@
 						<a href="https://ok.ru" class="contacts-box__link" target="_blank">ok.ru</a>
 					</div>
 				</div>
-				<div class="col-12 col-lg-6 col-xl-3 mb-25">
+				<div class="col-12 col-md-6 col-xl-3 mb-25">
 					<div class="contacts-box">
 						<div class="contacts-box__icon">
 							<svg class="svg-icon">
@@ -167,6 +188,7 @@
 			</div>
 		</div>
 	</section>
+
 	<section class="callback-section">
 		<div class="container">
 			<div class="row">
@@ -192,7 +214,7 @@
 										</div>
 									</div>
 									<div class="col-12 col-md-6 mb-32">
-										<div class="form-group form-group-error">
+										<div class="form-group">
 											<div class="label-title">Телефон</div>
 											<label><input type="text" placeholder="Введите Ваше имя" name="phone" required
 													class="form-control"></label>
@@ -200,7 +222,7 @@
 									</div>
 
 									<div class="col-12 mb-32">
-										<div class="form-group disabled">
+										<div class="form-group">
 											<div class="label-title">Комментарий (необязательно)
 											</div>
 											<label><textarea name="message" placeholder="Введите текст обращения"
@@ -209,12 +231,12 @@
 									</div>
 								</div>
 								<div class="row align-items-center">
-									<div class="col-12 col-lg-7">
+									<div class="col-12 col-md-6 col-lg-7">
 										<div class="consent font-500">
 											<p>Нажимая кнопку «Отправить» Вы даете свое согласие на обработку персональных данных</p>
 										</div>
 									</div>
-									<div class="col-12 col-lg-5">
+									<div class="col-12 col-md-6 col-lg-5">
 										<button type="submit" class="btn btn-md btn-accent-blue">отправить</button>
 									</div>
 								</div>
@@ -226,7 +248,6 @@
 			</div>
 		</div>
 	</section>
-
 
 	<footer>
 		<div class="container">
@@ -312,6 +333,8 @@
 					</svg>
 				</button>
 				<div class="dealers-overlay modal-overlay callback-overlay">
+					<div class="decor-line decor-line1"></div>
+					<div class="decor-line decor-line2"></div>
 					<div class="decor-line decor-line3"></div>
 					<div class="decor-line decor-line4"></div>
 					<div class="dealers-wrapper modal-wrapper callback-wrapper">
@@ -341,12 +364,12 @@
 									</div>
 								</div>
 								<div class="row align-items-center">
-									<div class="col-12 col-lg-7">
+									<div class="col-12 col-md-6 col-lg-7">
 										<div class="consent font-500">
 											<p>Нажимая кнопку «Отправить» Вы даете свое согласие на обработку персональных данных</p>
 										</div>
 									</div>
-									<div class="col-12 col-lg-5">
+									<div class="col-12 col-md-6 col-lg-5">
 										<button type="submit" class="btn btn-md btn-accent-blue">отправить</button>
 									</div>
 								</div>

@@ -154,6 +154,11 @@ footer .dropdown-toggle:after {
   max-width: 440px;
 }
 
+.btn-close:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .modal-content {
   border-radius: 0;
   border: 1px solid #f2f6f8;
