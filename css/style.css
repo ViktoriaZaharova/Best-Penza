@@ -191,8 +191,11 @@ textarea, textarea.form-control {
   margin: 50px auto 0;
   width: 100%;
   max-width: 735px;
+}
+.form-callback [type=submit] {
   margin-left: auto;
 }
+
 .form-group.focus .label-title {
   color: #6fafd3;
 }

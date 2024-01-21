@@ -184,3 +184,7 @@ footer .dropdown-toggle:after {
   border: none;
   margin: 0;
 }
+
+.modal-title {
+  text-align: center;
+}

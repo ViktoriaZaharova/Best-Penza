@@ -22,6 +22,31 @@ header
 
 .nav-menu
 	margin: 0 auto
+	.logo
+		font-size: 24px
+	&__header
+		width: 100%
+		display: none
+		align-items: center
+		justify-content: space-between
+		margin: 0 0 20px
+	&__close
+		@include d-flex
+		width: 40px
+		height: 40px
+		border: 1px solid $accent-green
+		margin: 0 0 0 auto
+		cursor: pointer
+		fill: $accent-green
+		padding: 4px
+	.header-contacts
+		display: none	
+	.btn-basket
+		display: none
+		color: $accent-green
+		svg
+			width: 32px
+			height: 32px	
 
 .menu
 	display: flex

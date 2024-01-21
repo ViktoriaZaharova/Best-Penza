@@ -1,16 +1,583 @@
-/*==========  Desktop First  ==========*/
+/*==========	Desktop First	==========*/
 
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1400px)
+	.menu
+		font-size: 14px
+		.nav-item
+			margin: 0 15px 0 0
+
+	.phone
+		font-size: 34px
+
+	.about .title-overlay
+		font-size: 220px
+
+@media only screen and (max-width: 1360px)
+	.footer-column-address
+		max-width: 343px
+
+@media only screen and (max-width: 1300px)
+	.nav-menu
+		display: none
+		position: fixed
+		right: 0
+		top: 0
+		height: 100%
+		z-index: 10
+		background: #fff
+		padding: 20px
+		overflow-y: auto
+		max-width: 300px
+		width: 100%
+		box-shadow: 0 0 10px rgba(#000, .3)
+		&__header
+			display: flex
+		.dropdown-menu
+			position: relative !important
+			left: 0 !important
+			top: 0 !important
+			transform: none !important
+			margin: 10px 0 0 !important
+		.header-contacts
+			display: block
+			margin: 30px 0
+		.btn-basket
+			width: 100%
+			display: flex
+			margin: 0
+			span
+				margin: 0 0 0 20px
+
+	.link-callback
+		margin: 2px 0 0
+
+	.menu
+		font-size: 18px
+		flex-wrap: wrap
+		.nav-item
+			margin: 0 0 20px
+			width: 100%
+			&:last-child
+				margin: 0
+
+	.btn-burger
+		display: flex
+
+	header
+		.logo
+			margin: 0 auto 0 0
+
+	.home-image-slider
+		max-width: 900px
+
+	.home-slider-item
+		padding: 40px
+
+	.home-wrapper
+		min-height: 550px
+
+	h1, .h1
+		font-size: 70px
+		line-height: normal
+
+	.about .title-overlay
+		font-size: 180px
+		line-height: normal
+
 @media only screen and (max-width: 1200px)
+	.home-image-slider
+		max-width: 650px
+
+	h1, .h1
+		font-size: 50px
+
+	.home-wrapper
+		min-height: 400px
+
+	.home-slider
+		.box-text-md
+			margin: 8px 0 18px
+
+	.text-overlay
+		font-size: 150px
+		line-height: normal
+
+	.about-image__img
+		left: 55%
+		transform: translate(-50%,0)
+
+	.our-production-card
+		min-height: 400px
+
+	.sales-geography
+		padding: 62px 0 65px
+
+	.slick-arrow
+		width: 80px
+		height: 80px
+		min-width: 80px
+		padding: 13px
+
+	.reviews-slider
+		padding: 0 68px
+
+	.footer-column-address
+		max-width: none
+
+	.footer-column:last-child	
+		margin: 54px 0 0
+
+	.modal-content
+		padding: 64px 16px
+
 
 @media only screen and (max-width: 992px)
+	.box-text-md
+		font-size: 16px
+		line-height: normal
+
+	.home-image-slider
+		max-width: 500px
+		left: auto
+		right: -100px
+		top: auto
+		bottom: 0
+		.slick-slide
+			height: auto
+			display: flex
+			align-items: flex-end
+		.slick-track
+			display: flex
+			align-items: stretch
+
+	.home-slider
+		max-width: 470px
+
+	.home-slider-item
+		padding: 30px
+
+	.home
+		.btn-md
+			height: 50px
+			padding: 14px 24px 10px
+			font-size: 24px
+
+	.slider-nav
+		padding: 5px 16px
+
+	.counter-slide
+		font-size: 40px
+
+		&::before
+			margin: 0 16px
+		.cp
+			margin: 0 0 -10px
+			min-width: 34px
+
+	.slick-dots
+		li
+			width: 8px
+			height: 8px
+			margin: 0 8px 0 0
+			border-color: #D8E0E5
+
+	.text-overlay
+		font-size: 120px
+
+	.about
+		padding: 57px 0 68px
+		.title-overlay
+			display: none
+
+	.about-image
+		margin: 100px -16px 80px
+		position: relative
+		padding: 16px
+		width: calc(100% + 32px)
+		&::before, &::after
+			color: #F2F6F8
+			font-family: 'Pobeda', sans-serif
+			font-size: 97.5px
+			line-height: 78.75px
+			font-weight: bold
+			position: absolute
+			left: 0
+			z-index: -1
+		&::before
+			content: 'РОДНИКОВАЯ'
+			top: -65px
+		&:after
+			content: 'ВОДА'
+			bottom: -84px
+		.decor-line
+			display: none
+
+	.our-factory
+		padding: 65px 0
+		&__content
+			min-width: auto
+			width: 100%
+			padding: 24px
+			.box-text
+				margin: 16px 0
+			.decor-line
+				display: none
+		&__video
+			max-width: none
+			padding: 16px
+			height: auto
+			margin: 0 0 -1px
+			.decor-line
+				display: none
+
+	.title-overlay
+		font-size: 140px
+		line-height: 170px
+
+	.our-production
+		padding: 85px 0 48px
+
+	.sales-geography
+		&__map
+			position: relative
+		&__content
+			max-width: none
+
+	.sales-geography-wrapper
+		padding: 0
+
+	.reviews
+		padding: 62px 0
+
+	footer
+		padding: 64px 0
+		background: #00272b
+		&::before
+			display: none
+
+	.footer-column
+		&:first-child
+			width: 100%
+			margin: 0 0 54px	
+
+	.map
+		max-width: none	
+
+	.modal-dialog .btn-close
+		right: 41px
+		top: 89px			
 
 @media only screen and (max-width: 768px)
+	.home
+		padding: 16px 0
+
+	.img-decor2
+		margin: 0 auto -56px
+
+	.img-decor1
+		max-width: 156px
+
+	.home-slider-item
+		padding: 24px
+
+	.home-wrapper
+		min-height: auto
+		flex-wrap: wrap
+
+	.home-overlay
+		padding: 16px
+
+	.home-slider
+		max-width: none
+		&__nav
+			right: auto
+			left: 50%
+			transform: translate(-50%,0)
+
+	.home-image-slider
+		position: relative
+		width: 100%
+		top: 0
+		transform: none
+		bottom: 0
+		right: 0
+		max-width: none
+
+	.dealers h2
+		font-size: 50px
+
+	.our-factory
+		&__video
+			&::before
+				width: 60px
+				height: 60px
+
+	.news-card__img
+		height: 300px
+
+	.reviews-card
+		padding: 24px
+		.box-text
+			max-width: none
+
+	.reviews-slider
+		padding: 0
+		.slick-slide
+			padding: 0
+		.slick-arrow
+			position: relative
+			bottom: 0
+			left: 0
+			top: 0
+
+		&__nav
+			width: 100%
+			padding: 0
+			margin: 0 auto
+			.slick-prev
+				margin: 0 auto 0 0
+			.slick-next
+				order: 2
+				margin: 0 0 0 auto
+
+	.callback-section
+		padding: 64px 0 0		
+
+	.form-callback
+		[type="submit"]
+			margin: 30px 0 0
+
+	.consent
+		max-width: none
+
+
 
 @media only screen and (max-width: 576px)
+	header
+		.header-contacts, .btn-basket
+			display: none
+
+	h1, .h1
+		font-size: 40px
+		line-height: 40px
+
+	.mb-25
+		margin-bottom: 16px
+
+	.mb-32
+		margin-bottom: 24px	
+
+	.mb-48
+		margin-bottom: 24px
+
+	.mb-55
+		margin-bottom: 32px
+
+	.container-fluid
+		padding: 0 16px
+
+	.text-overlay
+		font-size: 97.5px
+
+	.img-decor2
+		margin: 0 auto -25px
+
+	.about-box__icon
+		margin: 0 16px 0 0
+
+	.about-image
+		height: 185px
+		&__img
+			max-width: 246px
+			top: -119px
+
+	.our-factory
+		&__video
+			&::before
+				width: 40px
+				height: 40px
+
+	.our-production
+		.title-overlay
+			top: -85px
+			transform: translate(-50%,0)
+		.mb-46
+			margin-bottom: 16px
+
+	.our-production-card
+		padding: 16px
+		min-height: 360px
+		&__wrapper
+			padding: 16px
+		&__content
+			justify-content: flex-start
+		&.bg-accent-turquoise, &.bg-accent-green
+			.our-production-card__image
+				height: auto
+				top: auto
+				bottom: 0
+				transform: none
+
+	.sales-geography
+		.title-overlay
+			top: -85px
+			transform: translate(-50%,0)
+		&__content
+			padding: 24px
+
+	.list-country
+		margin: 16px 0 0
+
+	.dealers
+		padding: 64px 0 0
+		h2
+			font-size: 40px
+			line-height: 40px
+		.btn
+			font-size: 24px
+			padding: 14px 24px 10px
+			height: 50px
+
+	.dealers-overlay
+		padding: 16px
+
+	.dealers-wrapper
+		padding: 24px
+
+	.our-news
+		padding: 64px 0
+
+	.news-card
+		&__img
+			height: 250px
+			padding: 16px
+		&__body
+			padding: 16px
+		&__title
+			font-size: 32px
+			line-height: 34px
+
+	.reviews-slider
+		&__nav
+			margin: 0 auto
+			.counter-slide::before
+				width: 33px
+
+	.callback-section
+		background-size: 750px
+		background-position: center bottom
+		.text-overlay
+			font-size: 140px
+			text-align: left
+			margin: 0 auto -70px
+
+	.callback-wrapper
+		padding: 64px 16px 16px
+		.box-text
+			max-width: 280px
+			br
+				display: none
+
+	.form-callback
+		margin: 30px auto 0	
+		[type="submit"]
+			width: 100%
+
+	footer
+		.btn-md
+			padding: 14px 24px 10px
+			height: 50px
+			font-size: 24px	
+		.phone
+			margin: 24px 0		
+
+	.footer-column
+		width: 100%
+		margin: 0 0 54px
+		&:last-child
+			margin: 0
+
+	.footer-logo
+		margin: 0 0 24px		
+
+	.map
+		height: 300px	
+
+	.modal-wrapper
+		padding: 64px 16px		
+
+	.modal-title
+		font-size: 40px
+		line-height: 40px		
+
+	.modal-dialog
+		margin: 20px auto
+
+	.modal-content
+		background-size: 750px
+		background-position: center bottom
+		border: none		
 
 @media only screen and (max-width: 480px)
 
 @media only screen and (max-width: 420px)
 
-@media only screen and (max-width: 370px)	
+@media only screen and (max-width: 370px)
+	.btn-md
+		padding: 14px 17px 10px
+
+	.btn-burger
+		width: 50px
+		height: 50px
+		padding: 10px
+
+	.logo
+		font-size: 28px
+
+	.home-slider-item
+		h1, .h1
+			font-size: 34px
+			line-height: normal
+
+	.about-image::before, .about-image::after
+		font-size: 80px
+		line-height: normal
+
+	.title-overlay
+		font-size: 100px
+		line-height: normal
+
+	.our-production .title-overlay
+		top: -20px
+
+	.sales-geography
+		.title-overlay
+			left: 50%
+			top: -65px
+
+	.dealers
+		h2
+			font-size: 37px
+		.text-overlay
+			margin: 0 -60px -50px
+
+	.dealers-wrapper
+		padding: 16px
+
+	.list-country li
+		margin: 0 16px 0 0
+		&:last-child
+			margin: 0
+
+	.slick-arrow
+		width: 50px
+		height: 50px
+		min-width: 50px		
+
+	.modal-wrapper
+		padding: 64px 16px		
+
+	.modal-title
+		font-size: 35px
+		line-height: normal		

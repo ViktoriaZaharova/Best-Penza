@@ -1,2 +1,640 @@
-/*==========  Desktop First  ==========*/
+@charset "UTF-8";
+/*==========	Desktop First	==========*/
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1400px) {
+  .menu {
+    font-size: 14px;
+  }
+  .menu .nav-item {
+    margin: 0 15px 0 0;
+  }
+  .phone {
+    font-size: 34px;
+  }
+  .about .title-overlay {
+    font-size: 220px;
+  }
+}
+@media only screen and (max-width: 1360px) {
+  .footer-column-address {
+    max-width: 343px;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .nav-menu {
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    z-index: 10;
+    background: #fff;
+    padding: 20px;
+    overflow-y: auto;
+    max-width: 300px;
+    width: 100%;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  .nav-menu__header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .nav-menu .dropdown-menu {
+    position: relative !important;
+    left: 0 !important;
+    top: 0 !important;
+    -webkit-transform: none !important;
+            transform: none !important;
+    margin: 10px 0 0 !important;
+  }
+  .nav-menu .header-contacts {
+    display: block;
+    margin: 30px 0;
+  }
+  .nav-menu .btn-basket {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+  }
+  .nav-menu .btn-basket span {
+    margin: 0 0 0 20px;
+  }
+  .link-callback {
+    margin: 2px 0 0;
+  }
+  .menu {
+    font-size: 18px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .menu .nav-item {
+    margin: 0 0 20px;
+    width: 100%;
+  }
+  .menu .nav-item:last-child {
+    margin: 0;
+  }
+  .btn-burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .logo {
+    margin: 0 auto 0 0;
+  }
+  .home-image-slider {
+    max-width: 900px;
+  }
+  .home-slider-item {
+    padding: 40px;
+  }
+  .home-wrapper {
+    min-height: 550px;
+  }
+  h1, .h1 {
+    font-size: 70px;
+    line-height: normal;
+  }
+  .about .title-overlay {
+    font-size: 180px;
+    line-height: normal;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .home-image-slider {
+    max-width: 650px;
+  }
+  h1, .h1 {
+    font-size: 50px;
+  }
+  .home-wrapper {
+    min-height: 400px;
+  }
+  .home-slider .box-text-md {
+    margin: 8px 0 18px;
+  }
+  .text-overlay {
+    font-size: 150px;
+    line-height: normal;
+  }
+  .about-image__img {
+    left: 55%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+  .our-production-card {
+    min-height: 400px;
+  }
+  .sales-geography {
+    padding: 62px 0 65px;
+  }
+  .slick-arrow {
+    width: 80px;
+    height: 80px;
+    min-width: 80px;
+    padding: 13px;
+  }
+  .reviews-slider {
+    padding: 0 68px;
+  }
+  .footer-column-address {
+    max-width: none;
+  }
+  .footer-column:last-child {
+    margin: 54px 0 0;
+  }
+  .modal-content {
+    padding: 64px 16px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .box-text-md {
+    font-size: 16px;
+    line-height: normal;
+  }
+  .home-image-slider {
+    max-width: 500px;
+    left: auto;
+    right: -100px;
+    top: auto;
+    bottom: 0;
+  }
+  .home-image-slider .slick-slide {
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .home-image-slider .slick-track {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  .home-slider {
+    max-width: 470px;
+  }
+  .home-slider-item {
+    padding: 30px;
+  }
+  .home .btn-md {
+    height: 50px;
+    padding: 14px 24px 10px;
+    font-size: 24px;
+  }
+  .slider-nav {
+    padding: 5px 16px;
+  }
+  .counter-slide {
+    font-size: 40px;
+  }
+  .counter-slide::before {
+    margin: 0 16px;
+  }
+  .counter-slide .cp {
+    margin: 0 0 -10px;
+    min-width: 34px;
+  }
+  .slick-dots li {
+    width: 8px;
+    height: 8px;
+    margin: 0 8px 0 0;
+    border-color: #D8E0E5;
+  }
+  .text-overlay {
+    font-size: 120px;
+  }
+  .about {
+    padding: 57px 0 68px;
+  }
+  .about .title-overlay {
+    display: none;
+  }
+  .about-image {
+    margin: 100px -16px 80px;
+    position: relative;
+    padding: 16px;
+    width: calc(100% + 32px);
+  }
+  .about-image::before, .about-image::after {
+    color: #F2F6F8;
+    font-family: "Pobeda", sans-serif;
+    font-size: 97.5px;
+    line-height: 78.75px;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+  }
+  .about-image::before {
+    content: "РОДНИКОВАЯ";
+    top: -65px;
+  }
+  .about-image:after {
+    content: "ВОДА";
+    bottom: -84px;
+  }
+  .about-image .decor-line {
+    display: none;
+  }
+  .our-factory {
+    padding: 65px 0;
+  }
+  .our-factory__content {
+    min-width: auto;
+    width: 100%;
+    padding: 24px;
+  }
+  .our-factory__content .box-text {
+    margin: 16px 0;
+  }
+  .our-factory__content .decor-line {
+    display: none;
+  }
+  .our-factory__video {
+    max-width: none;
+    padding: 16px;
+    height: auto;
+    margin: 0 0 -1px;
+  }
+  .our-factory__video .decor-line {
+    display: none;
+  }
+  .title-overlay {
+    font-size: 140px;
+    line-height: 170px;
+  }
+  .our-production {
+    padding: 85px 0 48px;
+  }
+  .sales-geography__map {
+    position: relative;
+  }
+  .sales-geography__content {
+    max-width: none;
+  }
+  .sales-geography-wrapper {
+    padding: 0;
+  }
+  .reviews {
+    padding: 62px 0;
+  }
+  footer {
+    padding: 64px 0;
+    background: #00272b;
+  }
+  footer::before {
+    display: none;
+  }
+  .footer-column:first-child {
+    width: 100%;
+    margin: 0 0 54px;
+  }
+  .map {
+    max-width: none;
+  }
+  .modal-dialog .btn-close {
+    right: 41px;
+    top: 89px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .home {
+    padding: 16px 0;
+  }
+  .img-decor2 {
+    margin: 0 auto -56px;
+  }
+  .img-decor1 {
+    max-width: 156px;
+  }
+  .home-slider-item {
+    padding: 24px;
+  }
+  .home-wrapper {
+    min-height: auto;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .home-overlay {
+    padding: 16px;
+  }
+  .home-slider {
+    max-width: none;
+  }
+  .home-slider__nav {
+    right: auto;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+  .home-image-slider {
+    position: relative;
+    width: 100%;
+    top: 0;
+    -webkit-transform: none;
+            transform: none;
+    bottom: 0;
+    right: 0;
+    max-width: none;
+  }
+  .dealers h2 {
+    font-size: 50px;
+  }
+  .our-factory__video::before {
+    width: 60px;
+    height: 60px;
+  }
+  .news-card__img {
+    height: 300px;
+  }
+  .reviews-card {
+    padding: 24px;
+  }
+  .reviews-card .box-text {
+    max-width: none;
+  }
+  .reviews-slider {
+    padding: 0;
+  }
+  .reviews-slider .slick-slide {
+    padding: 0;
+  }
+  .reviews-slider .slick-arrow {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    top: 0;
+  }
+  .reviews-slider__nav {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .reviews-slider__nav .slick-prev {
+    margin: 0 auto 0 0;
+  }
+  .reviews-slider__nav .slick-next {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin: 0 0 0 auto;
+  }
+  .callback-section {
+    padding: 64px 0 0;
+  }
+  .form-callback [type=submit] {
+    margin: 30px 0 0;
+  }
+  .consent {
+    max-width: none;
+  }
+}
+@media only screen and (max-width: 576px) {
+  header .header-contacts, header .btn-basket {
+    display: none;
+  }
+  h1, .h1 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .mb-25 {
+    margin-bottom: 16px;
+  }
+  .mb-32 {
+    margin-bottom: 24px;
+  }
+  .mb-48 {
+    margin-bottom: 24px;
+  }
+  .mb-55 {
+    margin-bottom: 32px;
+  }
+  .container-fluid {
+    padding: 0 16px;
+  }
+  .text-overlay {
+    font-size: 97.5px;
+  }
+  .img-decor2 {
+    margin: 0 auto -25px;
+  }
+  .about-box__icon {
+    margin: 0 16px 0 0;
+  }
+  .about-image {
+    height: 185px;
+  }
+  .about-image__img {
+    max-width: 246px;
+    top: -119px;
+  }
+  .our-factory__video::before {
+    width: 40px;
+    height: 40px;
+  }
+  .our-production .title-overlay {
+    top: -85px;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+  .our-production .mb-46 {
+    margin-bottom: 16px;
+  }
+  .our-production-card {
+    padding: 16px;
+    min-height: 360px;
+  }
+  .our-production-card__wrapper {
+    padding: 16px;
+  }
+  .our-production-card__content {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .our-production-card.bg-accent-turquoise .our-production-card__image, .our-production-card.bg-accent-green .our-production-card__image {
+    height: auto;
+    top: auto;
+    bottom: 0;
+    -webkit-transform: none;
+            transform: none;
+  }
+  .sales-geography .title-overlay {
+    top: -85px;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+  .sales-geography__content {
+    padding: 24px;
+  }
+  .list-country {
+    margin: 16px 0 0;
+  }
+  .dealers {
+    padding: 64px 0 0;
+  }
+  .dealers h2 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .dealers .btn {
+    font-size: 24px;
+    padding: 14px 24px 10px;
+    height: 50px;
+  }
+  .dealers-overlay {
+    padding: 16px;
+  }
+  .dealers-wrapper {
+    padding: 24px;
+  }
+  .our-news {
+    padding: 64px 0;
+  }
+  .news-card__img {
+    height: 250px;
+    padding: 16px;
+  }
+  .news-card__body {
+    padding: 16px;
+  }
+  .news-card__title {
+    font-size: 32px;
+    line-height: 34px;
+  }
+  .reviews-slider__nav {
+    margin: 0 auto;
+  }
+  .reviews-slider__nav .counter-slide::before {
+    width: 33px;
+  }
+  .callback-section {
+    background-size: 750px;
+    background-position: center bottom;
+  }
+  .callback-section .text-overlay {
+    font-size: 140px;
+    text-align: left;
+    margin: 0 auto -70px;
+  }
+  .callback-wrapper {
+    padding: 64px 16px 16px;
+  }
+  .callback-wrapper .box-text {
+    max-width: 280px;
+  }
+  .callback-wrapper .box-text br {
+    display: none;
+  }
+  .form-callback {
+    margin: 30px auto 0;
+  }
+  .form-callback [type=submit] {
+    width: 100%;
+  }
+  footer .btn-md {
+    padding: 14px 24px 10px;
+    height: 50px;
+    font-size: 24px;
+  }
+  footer .phone {
+    margin: 24px 0;
+  }
+  .footer-column {
+    width: 100%;
+    margin: 0 0 54px;
+  }
+  .footer-column:last-child {
+    margin: 0;
+  }
+  .footer-logo {
+    margin: 0 0 24px;
+  }
+  .map {
+    height: 300px;
+  }
+  .modal-wrapper {
+    padding: 64px 16px;
+  }
+  .modal-title {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .modal-dialog {
+    margin: 20px auto;
+  }
+  .modal-content {
+    background-size: 750px;
+    background-position: center bottom;
+    border: none;
+  }
+}
+@media only screen and (max-width: 370px) {
+  .btn-md {
+    padding: 14px 17px 10px;
+  }
+  .btn-burger {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+  }
+  .logo {
+    font-size: 28px;
+  }
+  .home-slider-item h1, .home-slider-item .h1 {
+    font-size: 34px;
+    line-height: normal;
+  }
+  .about-image::before, .about-image::after {
+    font-size: 80px;
+    line-height: normal;
+  }
+  .title-overlay {
+    font-size: 100px;
+    line-height: normal;
+  }
+  .our-production .title-overlay {
+    top: -20px;
+  }
+  .sales-geography .title-overlay {
+    left: 50%;
+    top: -65px;
+  }
+  .dealers h2 {
+    font-size: 37px;
+  }
+  .dealers .text-overlay {
+    margin: 0 -60px -50px;
+  }
+  .dealers-wrapper {
+    padding: 16px;
+  }
+  .list-country li {
+    margin: 0 16px 0 0;
+  }
+  .list-country li:last-child {
+    margin: 0;
+  }
+  .slick-arrow {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+  }
+  .modal-wrapper {
+    padding: 64px 16px;
+  }
+  .modal-title {
+    font-size: 35px;
+    line-height: normal;
+  }
+}

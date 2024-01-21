@@ -38,6 +38,16 @@ $('.reviews-slider').slick({
 	appendDots: '.reviews-slider__nav',
 	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',
 	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
+	responsive: [
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				appendArrows: '.reviews-slider__nav',
+			}
+		}
+	]
 });
 
 $(".reviews-slider").on('afterChange', function (event, slick, currentSlide) {
@@ -142,4 +152,14 @@ $('.amount-v2 .up').on("click", function () {
 	$input.val(parseInt($input.val()) + 1 + ' упаковка');
 	$input.change();
 	return false;
+});
+
+// mobile menu
+$('.btn-burger').on('click', function (e) {
+	e.preventDefault();
+	$('.nav-menu').fadeToggle();
+});
+
+$('.nav-menu__close').on('click', function () {
+	$('.nav-menu').fadeOut();
 });
