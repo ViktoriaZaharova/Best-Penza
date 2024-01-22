@@ -24,7 +24,7 @@ footer .container {
 }
 footer .phone {
   color: #fff;
-  margin: 40px 0;
+  margin: 40px 0 90px;
 }
 footer .menu {
   -webkit-box-orient: vertical;
@@ -103,13 +103,31 @@ footer .dropdown-toggle:after {
 .map {
   max-width: 587px;
   width: 100%;
-  height: 273px;
+  height: 345px;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
 }
 .map iframe {
   width: 100%;
   height: 100%;
+}
+
+.developer-links {
+  color: #e7eef2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0 0;
+  font-size: 14px;
+}
+.developer-links span {
+  margin: 0 10px 0 0;
+}
+.developer-links img {
+  max-width: 100px;
 }
 
 .modal-dialog {

@@ -1054,6 +1054,9 @@
   .footer-column:last-child {
     margin: 0;
   }
+  .footer-column-address {
+    margin: 0 0 20px;
+  }
   .footer-logo {
     margin: 0 0 24px;
   }
@@ -1215,6 +1218,9 @@
     top: 3px;
     -webkit-transform: none;
             transform: none;
+  }
+  .developer-links {
+    margin: 0;
   }
 }
 @media only screen and (max-width: 370px) {

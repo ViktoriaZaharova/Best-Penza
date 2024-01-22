@@ -470,7 +470,7 @@ blockquote
 		border-color: $accent-blue
 		color: $dark
 		background: $light-blue
-	&:focus, &:active, &:active
+	&:focus, &:active, &.active
 		background: $accent-blue
 		border-color: $accent-blue
 		color: #fff
@@ -671,9 +671,11 @@ a.color-accent-blue
 	font-family: $title-font
 	font-weight: bold
 	line-height: 52px
+	transition: .3s ease
 	.cp
 		min-width: 49px
 		text-align: center
+		transition: .3s ease
 	&::before
 		content: ''
 		width: 75px

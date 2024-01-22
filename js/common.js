@@ -1,7 +1,7 @@
 $('[name="phone"]').mask('+7 (999) 999-99-99');
 
 // активная ссылка меню
-$('.menu li a').each(function () {
+$('.menu li .nav-link').each(function () {
 	let location = window.location.href;
 	let link = this.href;
 	if (location === link) {
@@ -9,6 +9,8 @@ $('.menu li a').each(function () {
 	}
 });
 // end
+
+
 
 $('.home-bg-slider').slick({
 	slidesToShow: 1,
@@ -18,6 +20,7 @@ $('.home-bg-slider').slick({
 	infinite: false,
 	autoplay: true,
 	autoplaySpeed: 2000,
+	asNavFor: '.home-slider, .home-image-slider',
 });
 
 $('.home-slider').slick({
@@ -37,6 +40,7 @@ $('.home-image-slider').slick({
 	arrows: false,
 	swipe: false,
 	infinite: false,
+	asNavFor: '.home-slider, .home-image-slider',
 });
 
 $(".home-slider").on('afterChange', function (event, slick, currentSlide) {
@@ -127,7 +131,7 @@ $('.article-slider').slick({
 			settings: {
 				slidesToShow: 2,
 			}
-		},{
+		}, {
 			breakpoint: 768,
 			settings: {
 				slidesToShow: 1,
@@ -203,13 +207,3 @@ $('.nav-menu__close').on('click', function () {
 	$('.nav-menu').fadeOut();
 });
 
-$(".js-tab-trigger").click(function () {
-	var id = $(this).attr('data-tab'),
-		content = $('.js-tab-content[data-tab="' + id + '"]');
-
-	$('.js-tab-trigger.active').removeClass('active'); // 1
-	$(this).addClass('active'); // 2
-
-	$('.js-tab-content.active').removeClass('active'); // 3
-	content.addClass('active'); // 4
-});

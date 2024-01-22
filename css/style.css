@@ -659,7 +659,7 @@ blockquote {
   color: #152250;
   background: #f2f6f8;
 }
-.dropdown-item:focus, .dropdown-item:active, .dropdown-item:active {
+.dropdown-item:focus, .dropdown-item:active, .dropdown-item.active {
   background: #87c3e5;
   border-color: #87c3e5;
   color: #fff;
@@ -946,10 +946,14 @@ a.color-accent-blue:hover {
   font-family: "Pobeda", sans-serif;
   font-weight: bold;
   line-height: 52px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 .counter-slide .cp {
   min-width: 49px;
   text-align: center;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 .counter-slide::before {
   content: "";
