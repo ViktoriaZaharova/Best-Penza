@@ -34,6 +34,16 @@
 						<span class="logo-text">Бест Пенза</span>
 					</a>
 					<nav class="nav nav-menu">
+						<div class="nav-menu__header">
+							<a href="index.html" class="logo">
+								<span class="logo-icon"><img src="img/logo.png" alt=""></span>
+								<span class="logo-text">Бест Пенза</span>
+							</a>
+							<div class="nav-menu__close"><svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#close"></use>
+								</svg></div>
+						</div>
+
 						<ul class="menu my-ul">
 							<li class="dropdown nav-item"><a href="about.html" class="dropdown-toggle nav-link"
 									data-bs-toggle="dropdown">О компании</a>
@@ -52,6 +62,17 @@
 							<li class="nav-item"><a href="contacts.html" class="nav-link">Контакты</a></li>
 							<li class="nav-item"><a href="reviews.html" class="nav-link">Отзывы</a></li>
 						</ul>
+						<div class="header-contacts">
+							<a href="tel:88005556814" class="phone">8-(800)-555-68-14</a>
+							<a href="#" class="color-accent-green text-decoration link-callback" data-bs-toggle="modal"
+								data-bs-target="#callbackModal">Заказать обратный звонок</a>
+						</div>
+
+						<a href="basket.html" class="btn-basket"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#basket"></use>
+							</svg>
+							<span>Корзина</span>
+						</a>
 					</nav>
 					<div class="header-contacts">
 						<a href="tel:88005556814" class="phone">8-(800)-555-68-14</a>
@@ -118,7 +139,10 @@
 									</svg>
 								</a>
 							</div>
-							<div class="our-production-card__image"><img src="img/products1.png" alt=""></div>
+							<div class="our-production-card__image">
+								<img src="img/products1.png" alt="" class="d-none d-sm-block">
+								<img src="img/products1-mob.png" alt="" class="d-block d-sm-none">
+							</div>
 						</div>
 					</div>
 				</div>
@@ -139,7 +163,10 @@
 									</svg>
 								</a>
 							</div>
-							<div class="our-production-card__image"><img src="img/products2.png" alt=""></div>
+							<div class="our-production-card__image">
+								<img src="img/products2.png" alt="" class="d-none d-sm-block">
+								<img src="img/products2-mob.png" alt="" class="d-block d-sm-none">
+							</div>
 						</div>
 					</div>
 				</div>
@@ -160,7 +187,10 @@
 									</svg>
 								</a>
 							</div>
-							<div class="our-production-card__image"><img src="img/products3.png" alt=""></div>
+							<div class="our-production-card__image">
+								<img src="img/products3.png" alt="" class="d-none d-sm-block">
+								<img src="img/products3-mob.png" alt="" class="d-block d-sm-none">
+							</div>
 						</div>
 					</div>
 				</div>
@@ -253,6 +283,8 @@
 					</svg>
 				</button>
 				<div class="dealers-overlay modal-overlay callback-overlay">
+					<div class="decor-line decor-line1"></div>
+					<div class="decor-line decor-line2"></div>
 					<div class="decor-line decor-line3"></div>
 					<div class="decor-line decor-line4"></div>
 					<div class="dealers-wrapper modal-wrapper callback-wrapper">
@@ -282,12 +314,12 @@
 									</div>
 								</div>
 								<div class="row align-items-center">
-									<div class="col-12 col-lg-7">
+									<div class="col-12 col-md-6 col-lg-7">
 										<div class="consent font-500">
 											<p>Нажимая кнопку «Отправить» Вы даете свое согласие на обработку персональных данных</p>
 										</div>
 									</div>
-									<div class="col-12 col-lg-5">
+									<div class="col-12 col-md-6 col-lg-5">
 										<button type="submit" class="btn btn-md btn-accent-blue">отправить</button>
 									</div>
 								</div>

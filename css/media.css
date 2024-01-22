@@ -234,6 +234,21 @@
   .product-content {
     padding: 16px 0 0;
   }
+  .catalog-section h2 {
+    text-align: center;
+  }
+  .list-filter {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 16px auto 0;
+  }
+  .list-filter li {
+    margin: 0;
+  }
+  .list-filter li a {
+    padding: 8px;
+  }
 }
 @media only screen and (max-width: 992px) {
   .box-text-md {
@@ -427,6 +442,10 @@
   .product-content-box {
     margin: 40px 0 0;
   }
+  .product-card__title {
+    font-size: 30px;
+    line-height: normal;
+  }
 }
 @media only screen and (max-width: 768px) {
   .home {
@@ -541,7 +560,7 @@
   .payments-card-box {
     margin: 32px 0 0;
   }
-  .delivery-section {
+  .delivery-section, .catalog-section {
     padding: 64px 0;
   }
   .product-card-row {
@@ -637,17 +656,29 @@
     font-size: 40px;
     line-height: 40px;
   }
+  .row {
+    margin: 0 -8px;
+  }
+  .row > * {
+    padding: 0 8px;
+  }
   .mb-25 {
     margin-bottom: 16px;
   }
   .mb-32 {
     margin-bottom: 24px;
   }
+  .mb-35 {
+    margin-bottom: 16px;
+  }
   .mb-48 {
     margin-bottom: 24px;
   }
   .mb-55 {
     margin-bottom: 32px;
+  }
+  .mb-60 {
+    margin-bottom: 40px;
   }
   .container-fluid {
     padding: 0 16px;
@@ -682,6 +713,9 @@
   .our-factory__video::before {
     width: 40px;
     height: 40px;
+  }
+  .our-production {
+    padding: 62px 0 48px;
   }
   .our-production .title-overlay {
     top: -85px;
@@ -968,5 +1002,11 @@
   .address-manufacturer h2, .callback-section h2 {
     font-size: 52px;
     line-height: normal;
+  }
+  .pagination .page-link {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    font-size: 28px;
   }
 }

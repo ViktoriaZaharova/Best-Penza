@@ -144,6 +144,8 @@
 		z-index: 2
 		background: #fff
 
+	
+
 @media only screen and (max-width: 1200px)
 	.home-image-slider
 		max-width: 650px
@@ -198,6 +200,18 @@
 
 	.product-content
 		padding: 16px 0 0
+
+	.catalog-section
+		h2
+			text-align: center
+
+	.list-filter
+		justify-content: center
+		margin: 16px auto 0		
+		li
+			margin: 0
+			a
+				padding: 8px		
 
 @media only screen and (max-width: 992px)
 	.box-text-md
@@ -369,6 +383,10 @@
 	.product-content-box
 		margin: 40px 0 0
 
+	.product-card__title
+		font-size: 30px
+		line-height: normal	
+
 @media only screen and (max-width: 768px)
 	.home
 		padding: 16px 0
@@ -472,7 +490,7 @@
 	.payments-card-box
 		margin: 32px 0 0
 
-	.delivery-section
+	.delivery-section, .catalog-section
 		padding: 64px 0
 
 	.product-card-row
@@ -552,17 +570,28 @@
 		font-size: 40px
 		line-height: 40px
 
+	.row
+		margin: 0 -8px 
+		> *	
+			padding: 0 8px
+
 	.mb-25
 		margin-bottom: 16px
 
 	.mb-32
 		margin-bottom: 24px
 
+	.mb-35
+		margin-bottom: 16px	
+
 	.mb-48
 		margin-bottom: 24px
 
 	.mb-55
 		margin-bottom: 32px
+
+	.mb-60
+		margin-bottom: 40px	
 
 	.container-fluid
 		padding: 0 16px
@@ -594,6 +623,7 @@
 				height: 40px
 
 	.our-production
+		padding: 62px 0 48px
 		.title-overlay
 			top: -85px
 			transform: translate(-50%,0)
@@ -791,11 +821,9 @@
 	.recommended-products
 		h2
 			font-size: 40px
-			line-height: normal		
+			line-height: normal
 
-@media only screen and (max-width: 480px)
 
-@media only screen and (max-width: 420px)
 
 @media only screen and (max-width: 370px)
 	.btn-md
@@ -863,3 +891,10 @@
 		h2
 			font-size: 52px
 			line-height: normal
+
+
+	.pagination .page-link
+		width: 40px
+		height: 40px
+		min-width: 40px
+		font-size: 28px
