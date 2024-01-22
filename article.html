@@ -34,6 +34,16 @@
 						<span class="logo-text">Бест Пенза</span>
 					</a>
 					<nav class="nav nav-menu">
+						<div class="nav-menu__header">
+							<a href="index.html" class="logo">
+								<span class="logo-icon"><img src="img/logo.png" alt=""></span>
+								<span class="logo-text">Бест Пенза</span>
+							</a>
+							<div class="nav-menu__close"><svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#close"></use>
+								</svg></div>
+						</div>
+
 						<ul class="menu my-ul">
 							<li class="dropdown nav-item"><a href="about.html" class="dropdown-toggle nav-link"
 									data-bs-toggle="dropdown">О компании</a>
@@ -52,6 +62,17 @@
 							<li class="nav-item"><a href="contacts.html" class="nav-link">Контакты</a></li>
 							<li class="nav-item"><a href="reviews.html" class="nav-link">Отзывы</a></li>
 						</ul>
+						<div class="header-contacts">
+							<a href="tel:88005556814" class="phone">8-(800)-555-68-14</a>
+							<a href="#" class="color-accent-green text-decoration link-callback" data-bs-toggle="modal"
+								data-bs-target="#callbackModal">Заказать обратный звонок</a>
+						</div>
+
+						<a href="basket.html" class="btn-basket"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#basket"></use>
+							</svg>
+							<span>Корзина</span>
+						</a>
 					</nav>
 					<div class="header-contacts">
 						<a href="tel:88005556814" class="phone">8-(800)-555-68-14</a>
@@ -238,7 +259,7 @@
 			</div>
 
 			<div class="row">
-				<div class="col-12 col-md-6 offset-lg-3">
+				<div class="col-12 col-lg-6 offset-lg-3">
 					<div class="article-box__image">
 						<div class="article-box__image-img img-max">
 							<img src="img/article-img3.png" alt="">
@@ -306,26 +327,30 @@
 				<div class="col-12 col-lg-8 offset-lg-2">
 					<h2>заголовок 2 уровня</h2>
 					<div class="text-article">
-						<p>Etiam rhoncus ante massa, vitae suscipit erat ornare posuere. Cras nec nunc eget nisl porta euismod sed sollicitudin
-						nibh. <a href="#" class="color-accent-blue d-inline">Ссылка внутри текста.</a> Phasellus fermentum fermentum urna, quis scelerisque ante ultrices a. Nam tincidunt turpis
-						ut lorem vulputate, sed sagittis arcu scelerisque. Nullam pellentesque odio</p>
-	
-						<p>Etiam rhoncus ante massa, vitae suscipit erat ornare posuere. Cras nec nunc eget nisl porta euismod sed sollicitudin
-						nibh. Sed in felis et tortor viverra volutpat. Phasellus fermentum fermentum urna, quis scelerisque ante ultrices a. Nam
-						tincidunt turpis ut lorem vulputate, sed sagittis arcu scelerisque. Nullam pellentesque odio</p>
+						<p>Etiam rhoncus ante massa, vitae suscipit erat ornare posuere. Cras nec nunc eget nisl porta euismod sed
+							sollicitudin
+							nibh. <a href="#" class="color-accent-blue d-inline">Ссылка внутри текста.</a> Phasellus fermentum
+							fermentum urna, quis scelerisque ante ultrices a. Nam tincidunt turpis
+							ut lorem vulputate, sed sagittis arcu scelerisque. Nullam pellentesque odio</p>
+
+						<p>Etiam rhoncus ante massa, vitae suscipit erat ornare posuere. Cras nec nunc eget nisl porta euismod sed
+							sollicitudin
+							nibh. Sed in felis et tortor viverra volutpat. Phasellus fermentum fermentum urna, quis scelerisque ante
+							ultrices a. Nam
+							tincidunt turpis ut lorem vulputate, sed sagittis arcu scelerisque. Nullam pellentesque odio</p>
 					</div>
 				</div>
 			</div>
-	
+
 			<div class="row">
-				<div class="col-12 col-md-6 offset-lg-3">
+				<div class="col-12 col-lg-6 offset-lg-3">
 					<div class="article-box__image">
 						<div class="article-box__image-img img-max">
 							<img src="img/article-img4.png" alt="">
 						</div>
 					</div>
 				</div>
-	
+
 			</div>
 		</div>
 	</section>
@@ -345,7 +370,7 @@
 			</div>
 
 			<div class="row">
-				<div class="col-12 col-lg-4 mb-25">
+				<div class="col-12 col-md-6 col-lg-4 mb-25">
 					<div class="news-card news-card-green">
 						<a href="article.html" class="news-card__img"><img src="img/news3.jpg" alt=""></a>
 						<div class="news-card__body">
@@ -364,7 +389,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-12 col-lg-4 mb-25">
+				<div class="col-12 col-md-6 col-lg-4 mb-25">
 					<div class="news-card news-card-blue">
 						<a href="article.html" class="news-card__img"><img src="img/news4.jpg" alt=""></a>
 						<div class="news-card__body">
@@ -383,7 +408,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-12 col-lg-4 mb-25">
+				<div class="col-12 col-md-6 col-lg-4 mb-25">
 					<div class="news-card news-card-green">
 						<a href="article.html" class="news-card__img"><img src="img/news5.jpg" alt=""></a>
 						<div class="news-card__body">
@@ -494,6 +519,8 @@
 					</svg>
 				</button>
 				<div class="dealers-overlay modal-overlay callback-overlay">
+					<div class="decor-line decor-line1"></div>
+					<div class="decor-line decor-line2"></div>
 					<div class="decor-line decor-line3"></div>
 					<div class="decor-line decor-line4"></div>
 					<div class="dealers-wrapper modal-wrapper callback-wrapper">
@@ -523,12 +550,12 @@
 									</div>
 								</div>
 								<div class="row align-items-center">
-									<div class="col-12 col-lg-7">
+									<div class="col-12 col-md-6 col-lg-7">
 										<div class="consent font-500">
 											<p>Нажимая кнопку «Отправить» Вы даете свое согласие на обработку персональных данных</p>
 										</div>
 									</div>
-									<div class="col-12 col-lg-5">
+									<div class="col-12 col-md-6 col-lg-5">
 										<button type="submit" class="btn btn-md btn-accent-blue">отправить</button>
 									</div>
 								</div>

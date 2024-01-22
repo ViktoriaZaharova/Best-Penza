@@ -144,8 +144,6 @@
 		z-index: 2
 		background: #fff
 
-	
-
 @media only screen and (max-width: 1200px)
 	.home-image-slider
 		max-width: 650px
@@ -207,11 +205,11 @@
 
 	.list-filter
 		justify-content: center
-		margin: 16px auto 0		
+		margin: 16px auto 0
 		li
 			margin: 0
 			a
-				padding: 8px		
+				padding: 8px
 
 @media only screen and (max-width: 992px)
 	.box-text-md
@@ -385,7 +383,10 @@
 
 	.product-card__title
 		font-size: 30px
-		line-height: normal	
+		line-height: normal
+
+	.article-slider__nav
+		padding: 0
 
 @media only screen and (max-width: 768px)
 	.home
@@ -543,7 +544,7 @@
 			margin: 0 3px 0 0
 
 	.product-preview-slider
-		display: none	
+		display: none
 
 	.product-max-slider
 		width: 100%
@@ -554,12 +555,55 @@
 			padding: 5px
 		.slick-next
 			left: auto
-			right: 0		
+			right: 0
 		.slick-dots
 			bottom: 30px
 		.slick-slide
 			height: 370px
-						
+
+	.page-article
+		padding: 64px 0 157px
+
+	.article-banner
+		height: 300px
+		margin: -90px 0 0
+
+	.article-box
+		padding: 24px
+		margin: 0 0 16px
+		h4
+			margin: 0 0 16px
+
+	.article-menu li
+		margin: 0 0 16px
+		ul
+			margin: 16px 0 0
+
+	.article-box-info
+		margin: 0 0 16px
+		&:last-child
+			margin: 0
+		&__icon
+			width: 33px
+			height: 33px
+			min-width: 33px
+
+	.p-120
+		padding: 64px 0
+
+	.article-section 
+		h2	
+			margin: 0 0 32px
+
+	.text-article ul, .text-article p
+		margin: 0 0 32px
+
+	.article-box__image
+		margin: 0 0 48px
+		&-img
+			padding: 16px
+		&-body
+			padding: 16px				
 
 @media only screen and (max-width: 576px)
 	header
@@ -571,8 +615,8 @@
 		line-height: 40px
 
 	.row
-		margin: 0 -8px 
-		> *	
+		margin: 0 -8px
+		> *
 			padding: 0 8px
 
 	.mb-25
@@ -582,7 +626,7 @@
 		margin-bottom: 24px
 
 	.mb-35
-		margin-bottom: 16px	
+		margin-bottom: 16px
 
 	.mb-48
 		margin-bottom: 24px
@@ -591,7 +635,7 @@
 		margin-bottom: 32px
 
 	.mb-60
-		margin-bottom: 40px	
+		margin-bottom: 40px
 
 	.container-fluid
 		padding: 0 16px
@@ -809,7 +853,7 @@
 		height: 56px
 
 	.btn-add-card
-		margin: 0	
+		margin: 0
 
 	.product-section h1
 		font-size: 40px
@@ -823,7 +867,48 @@
 			font-size: 40px
 			line-height: normal
 
+	.page-article
+		.mb-48
+			margin-bottom: 16px
 
+	.article-banner
+		padding: 16px
+		height: 186px
+
+	.article-box__image-img
+		height: 240px	
+
+	.article-section
+		.mb-48
+			margin-bottom: 32px
+
+	.article-box__content h3
+		margin: 0 0 32px
+		
+	.quote
+		margin: 32px auto
+		padding: 28px 32px
+		
+	.quote-content
+		padding: 0 60px 0 24px	
+						
+	.quote-author
+		margin: 24px 0 0
+
+	.article-slider
+		width: calc(100% + 32px)
+		margin: 0 -16px
+		&__nav
+			width: calc(100% + 32px)		
+			margin: 0 -16px
+			.slick-prev
+				margin: 0 auto 0 0
+			.slick-next
+				margin: 0 0 0 auto
+
+	.article-slider__img
+		padding: 16px	
+		height: 240px							
 
 @media only screen and (max-width: 370px)
 	.btn-md
@@ -892,9 +977,23 @@
 			font-size: 52px
 			line-height: normal
 
-
 	.pagination .page-link
 		width: 40px
 		height: 40px
 		min-width: 40px
 		font-size: 28px
+
+	.article-slider
+		&__nav
+			.counter-slide::before
+				width: 33px
+
+	.quote
+		padding: 10px
+		.box-text
+			font-size: 18px
+			line-height: normal
+		&::before
+			font-size: 140px
+			top: -80px
+			right: -20px						

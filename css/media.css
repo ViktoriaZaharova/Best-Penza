@@ -446,6 +446,9 @@
     font-size: 30px;
     line-height: normal;
   }
+  .article-slider__nav {
+    padding: 0;
+  }
 }
 @media only screen and (max-width: 768px) {
   .home {
@@ -646,6 +649,55 @@
   }
   .product-max-slider .slick-slide {
     height: 370px;
+  }
+  .page-article {
+    padding: 64px 0 157px;
+  }
+  .article-banner {
+    height: 300px;
+    margin: -90px 0 0;
+  }
+  .article-box {
+    padding: 24px;
+    margin: 0 0 16px;
+  }
+  .article-box h4 {
+    margin: 0 0 16px;
+  }
+  .article-menu li {
+    margin: 0 0 16px;
+  }
+  .article-menu li ul {
+    margin: 16px 0 0;
+  }
+  .article-box-info {
+    margin: 0 0 16px;
+  }
+  .article-box-info:last-child {
+    margin: 0;
+  }
+  .article-box-info__icon {
+    width: 33px;
+    height: 33px;
+    min-width: 33px;
+  }
+  .p-120 {
+    padding: 64px 0;
+  }
+  .article-section h2 {
+    margin: 0 0 32px;
+  }
+  .text-article ul, .text-article p {
+    margin: 0 0 32px;
+  }
+  .article-box__image {
+    margin: 0 0 48px;
+  }
+  .article-box__image-img {
+    padding: 16px;
+  }
+  .article-box__image-body {
+    padding: 16px;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -937,6 +989,50 @@
     font-size: 40px;
     line-height: normal;
   }
+  .page-article .mb-48 {
+    margin-bottom: 16px;
+  }
+  .article-banner {
+    padding: 16px;
+    height: 186px;
+  }
+  .article-box__image-img {
+    height: 240px;
+  }
+  .article-section .mb-48 {
+    margin-bottom: 32px;
+  }
+  .article-box__content h3 {
+    margin: 0 0 32px;
+  }
+  .quote {
+    margin: 32px auto;
+    padding: 28px 32px;
+  }
+  .quote-content {
+    padding: 0 60px 0 24px;
+  }
+  .quote-author {
+    margin: 24px 0 0;
+  }
+  .article-slider {
+    width: calc(100% + 32px);
+    margin: 0 -16px;
+  }
+  .article-slider__nav {
+    width: calc(100% + 32px);
+    margin: 0 -16px;
+  }
+  .article-slider__nav .slick-prev {
+    margin: 0 auto 0 0;
+  }
+  .article-slider__nav .slick-next {
+    margin: 0 0 0 auto;
+  }
+  .article-slider__img {
+    padding: 16px;
+    height: 240px;
+  }
 }
 @media only screen and (max-width: 370px) {
   .btn-md {
@@ -1008,5 +1104,20 @@
     height: 40px;
     min-width: 40px;
     font-size: 28px;
+  }
+  .article-slider__nav .counter-slide::before {
+    width: 33px;
+  }
+  .quote {
+    padding: 10px;
+  }
+  .quote .box-text {
+    font-size: 18px;
+    line-height: normal;
+  }
+  .quote::before {
+    font-size: 140px;
+    top: -80px;
+    right: -20px;
   }
 }
