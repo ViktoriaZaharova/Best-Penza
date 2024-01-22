@@ -52,6 +52,14 @@
 	.footer-column-address
 		max-width: 343px
 
+	.influence-box
+		margin: 0 0 16px
+		max-width: none
+		&:first-child
+			margin: 0 0 16px
+		&:last-child
+			margin: 0
+
 @media only screen and (max-width: 1300px)
 	.nav-menu
 		display: none
@@ -144,6 +152,33 @@
 		z-index: 2
 		background: #fff
 
+	.nav-tabs .nav-link
+		padding: 16px 16px 10px
+		font-size: 24px
+
+	.history-company
+		background: #f2f6f8
+		.h1
+			font-size: 100px
+
+	.history-company-box__date
+		width: 50%
+
+	.history-company-box__content
+		max-width: 50%
+
+	.history-company-box:nth-child(even) .history-company-box__date
+		max-width: 50%
+
+	.history-company-box:nth-child(even) .history-company-box__content
+		width: 50%
+
+	.history-company-box::before
+		right: 50%
+
+	.history-company-list::before, .history-company-list:after
+		right: calc(50% - 4px)
+
 @media only screen and (max-width: 1200px)
 	.home-image-slider
 		max-width: 650px
@@ -210,6 +245,19 @@
 			margin: 0
 			a
 				padding: 8px
+
+	.influence-content
+		margin: 0 0 32px
+		max-width: none
+
+	.influence
+		padding: 64px 0
+		background: #fff
+		&::before
+			display: none
+
+	.about-video
+		padding: 64px 0
 
 @media only screen and (max-width: 992px)
 	.box-text-md
@@ -387,6 +435,87 @@
 
 	.article-slider__nav
 		padding: 0
+
+	.page-about
+		padding: 120px 0 64px
+		.nav-tabs
+			margin: 54px auto 0
+
+	.vitamins-section
+		padding: 64px 0
+		.box-text
+			max-width: none
+
+	.list-vitamins
+		margin: 48px 0 0
+
+	.properties
+		padding: 64px 0 0
+		h3
+			margin: 54px 0 0
+		.list-cube
+			max-width: none
+
+	.properties-wrapper
+		padding: 24px
+
+	.tehnology
+		padding: 64px 0 0
+		overflow: hidden
+
+	.tehnology-box
+		max-width: none
+
+	.tehnology-box.tehnology-box1
+		text-align: left
+		margin: 0 auto 254px
+
+	.tehnology-box.tehnology-box2
+		max-width: none
+		position: relative
+		z-index: 2
+
+	.tehnology-image
+		margin: 0 auto 0
+		position: absolute
+		bottom: 0
+		left: 50%
+		transform: translate(-50%,0)
+		padding: 0 0 70px
+		max-width: none
+		min-width: 655px
+
+		img
+			width: 100%
+
+	.tehnology-wrapper
+		margin: 44px 0 0
+		position: relative
+		padding: 0 0 70px
+		.decor-line
+			display: none
+
+	.history-company
+		padding: 64px 0
+		.h1
+			font-size: 72px
+			line-height: 67px
+			margin: 0 0 -39px
+
+	.history-company-box
+		padding: 0 0 64px
+		&:last-child
+			padding: 0
+		&__content
+			padding: 0 0 0 24px
+		&__date
+			padding: 0 24px 0 0
+
+	.history-company-box:nth-child(even) .history-company-box__date
+		padding: 0 0 0 24px
+
+	.history-company-box:nth-child(even) .history-company-box__content
+		padding: 0 24px 0 0				
 
 @media only screen and (max-width: 768px)
 	.home
@@ -591,8 +720,8 @@
 	.p-120
 		padding: 64px 0
 
-	.article-section 
-		h2	
+	.article-section
+		h2
 			margin: 0 0 32px
 
 	.text-article ul, .text-article p
@@ -603,7 +732,17 @@
 		&-img
 			padding: 16px
 		&-body
-			padding: 16px				
+			padding: 16px
+
+	.nav-tabs
+		flex-wrap: wrap
+		align-items: flex-start
+		justify-content: center
+		.nav-item
+			margin: 0 8px 8px 0
+			flex: none
+		// .nav-link
+		// 	white-space: nowrap	
 
 @media only screen and (max-width: 576px)
 	header
@@ -644,6 +783,10 @@
 		display: flex
 		align-items: center
 		justify-content: center
+		&.js-tab-content
+			display: none
+			&.active
+				display: flex
 
 	.text-overlay
 		font-size: 97.5px
@@ -876,7 +1019,7 @@
 		height: 186px
 
 	.article-box__image-img
-		height: 240px	
+		height: 240px
 
 	.article-section
 		.mb-48
@@ -884,14 +1027,14 @@
 
 	.article-box__content h3
 		margin: 0 0 32px
-		
+
 	.quote
 		margin: 32px auto
 		padding: 28px 32px
-		
+
 	.quote-content
-		padding: 0 60px 0 24px	
-						
+		padding: 0 60px 0 24px
+
 	.quote-author
 		margin: 24px 0 0
 
@@ -899,7 +1042,7 @@
 		width: calc(100% + 32px)
 		margin: 0 -16px
 		&__nav
-			width: calc(100% + 32px)		
+			width: calc(100% + 32px)
 			margin: 0 -16px
 			.slick-prev
 				margin: 0 auto 0 0
@@ -907,8 +1050,24 @@
 				margin: 0 0 0 auto
 
 	.article-slider__img
-		padding: 16px	
-		height: 240px							
+		padding: 16px
+		height: 240px
+
+	.box-subtext
+		margin: 16px auto 40px
+		max-width: 350px
+
+	.about-video-box
+		height: 240px
+
+	.tehnology
+		h2, .h2
+			font-size: 40px
+			line-height: normal
+
+	.history-company-box__date::before
+		top: 3px
+		transform: none		
 
 @media only screen and (max-width: 370px)
 	.btn-md
@@ -996,4 +1155,13 @@
 		&::before
 			font-size: 140px
 			top: -80px
-			right: -20px						
+			right: -20px
+
+	.history-company-box
+		.box-text
+			font-size: 14px
+
+	.history-company 
+		.h1
+			font-size: 60px
+			line-height: normal		

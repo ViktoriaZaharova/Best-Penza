@@ -742,6 +742,10 @@ a.color-accent-blue
 	a
 		color: #fff
 		white-space: nowrap
+	.js-tab-content
+		display: none
+		&.active
+			display: flex	
 
 .breadcrumb-v2
 	justify-content: flex-start
@@ -980,15 +984,17 @@ a.color-accent-blue
 	width: 100%
 	border: none
 	border-radius: 0
+	display: flex
+	align-items: stretch
 	.nav-item
 		margin: 0
 		flex: 1
 	.nav-link
 		margin: 0
+		height: 100%
 		width: 100%
 		text-align: center
 		padding: 24px 24px 16px
-		height: auto
 		font-family: $title-font
 		font-weight: bold
 		font-size: 32px
@@ -1000,3 +1006,8 @@ a.color-accent-blue
 			background: #fff
 			color: $accent-blue
 			border-color: #fff
+
+.js-tab-content
+	display: none
+	&.active
+		display: block

@@ -1905,7 +1905,6 @@
   position: relative;
   z-index: 1;
   margin: 58px 0 0;
-  background: #f2f6f8;
 }
 .tehnology-wrapper .decor-line1 {
   height: 776px;
@@ -1924,9 +1923,18 @@
   position: relative;
   margin: -130px 42px 0 auto;
   z-index: 1;
-  mix-blend-mode: multiply;
+  background: #F2F6F8;
   max-width: 1353px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .tehnology-image .text-overlay {
   position: absolute;
@@ -2153,6 +2161,7 @@
   padding: 143px 0 120px;
   background: #f2f6f8 url("../img/history-bg.png") no-repeat left top;
   background-size: 1072px;
+  overflow: hidden;
 }
 
 .history-company-list {

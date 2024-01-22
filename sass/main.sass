@@ -109,7 +109,6 @@
 	top: -115px
 	max-width: 1100px
 	z-index: -1
-		
 
 .decor-line
 	position: absolute
@@ -152,7 +151,7 @@
 	width: 100%
 	height: 357px
 	background: #fff
-	
+
 	@include d-flex
 	&__bg
 		width: 100%
@@ -1325,7 +1324,6 @@
 	position: relative
 	z-index: 1
 	margin: 58px 0 0
-	background: $light-blue
 	.decor-line1
 		height: 776px
 		width: 1px
@@ -1341,9 +1339,10 @@
 	position: relative
 	margin: -130px 42px 0 auto
 	z-index: 1
-	mix-blend-mode: multiply
+	background: #F2F6F8
 	max-width: 1353px
 	width: 100%
+	@include d-flex
 	.text-overlay
 		position: absolute
 		z-index: 1
@@ -1511,6 +1510,7 @@
 	padding: 143px 0 120px
 	background: $light-blue url('../img/history-bg.png') no-repeat left top
 	background-size: 1072px
+	overflow: hidden
 
 .history-company-list
 	width: 100%
@@ -1527,7 +1527,7 @@
 	&::before
 		top: 0
 	&::after
-		bottom: 0	
+		bottom: 0
 
 .history-company-box
 	width: 100%
@@ -1547,7 +1547,7 @@
 		margin: 0 0 8px
 	.h1
 		font-size: 140px
-		line-height: 124px	
+		line-height: 124px
 		margin: 0 0 -24px
 	&:last-child
 		padding: 0
@@ -1566,7 +1566,7 @@
 				width: calc(100% - 630px)
 				padding: 0 54px 0 0
 				text-align: right
-				
+
 	&__date
 		padding: 0 54px 0 0
 		width: calc(100% - 630px)

@@ -1057,6 +1057,14 @@ a.color-accent-blue:hover {
   color: #fff;
   white-space: nowrap;
 }
+.breadcrumb .js-tab-content {
+  display: none;
+}
+.breadcrumb .js-tab-content.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 
 .breadcrumb-v2 {
   -webkit-box-pack: start;
@@ -1400,6 +1408,12 @@ a.color-accent-blue:hover {
   width: 100%;
   border: none;
   border-radius: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 .nav-tabs .nav-item {
   margin: 0;
@@ -1409,10 +1423,10 @@ a.color-accent-blue:hover {
 }
 .nav-tabs .nav-link {
   margin: 0;
+  height: 100%;
   width: 100%;
   text-align: center;
   padding: 24px 24px 16px;
-  height: auto;
   font-family: "Pobeda", sans-serif;
   font-weight: bold;
   font-size: 32px;
@@ -1425,4 +1439,11 @@ a.color-accent-blue:hover {
   background: #fff;
   color: #87c3e5;
   border-color: #fff;
+}
+
+.js-tab-content {
+  display: none;
+}
+.js-tab-content.active {
+  display: block;
 }

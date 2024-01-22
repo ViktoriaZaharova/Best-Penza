@@ -34,6 +34,16 @@
 						<span class="logo-text">Бест Пенза</span>
 					</a>
 					<nav class="nav nav-menu">
+						<div class="nav-menu__header">
+							<a href="index.html" class="logo">
+								<span class="logo-icon"><img src="img/logo.png" alt=""></span>
+								<span class="logo-text">Бест Пенза</span>
+							</a>
+							<div class="nav-menu__close"><svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#close"></use>
+								</svg></div>
+						</div>
+
 						<ul class="menu my-ul">
 							<li class="dropdown nav-item"><a href="about.html" class="dropdown-toggle nav-link"
 									data-bs-toggle="dropdown">О компании</a>
@@ -52,6 +62,17 @@
 							<li class="nav-item"><a href="contacts.html" class="nav-link">Контакты</a></li>
 							<li class="nav-item"><a href="reviews.html" class="nav-link">Отзывы</a></li>
 						</ul>
+						<div class="header-contacts">
+							<a href="tel:88005556814" class="phone">8-(800)-555-68-14</a>
+							<a href="#" class="color-accent-green text-decoration link-callback" data-bs-toggle="modal"
+								data-bs-target="#callbackModal">Заказать обратный звонок</a>
+						</div>
+
+						<a href="basket.html" class="btn-basket"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#basket"></use>
+							</svg>
+							<span>Корзина</span>
+						</a>
 					</nav>
 					<div class="header-contacts">
 						<a href="tel:88005556814" class="phone">8-(800)-555-68-14</a>
@@ -73,7 +94,11 @@
 	</header>
 
 	<section class="page page-about bg-accent-blue">
-		<div class="title-overlay">О компании</div>
+		<div class="title-overlay js-tab-content active" data-tab="1">О компании</div>
+		<div class="title-overlay js-tab-content" data-tab="2">История</div>
+		<div class="title-overlay js-tab-content" data-tab="3">Награды</div>
+		<div class="title-overlay js-tab-content" data-tab="4">Соц.инициативы</div>
+		<div class="title-overlay js-tab-content" data-tab="5">Философия бренда</div>
 		<div class="container">
 			<div class="row">
 				<div class="col-12 text-center">
@@ -82,33 +107,36 @@
 						<nav aria-label="breadcrumb" class="nav-breadcrumb">
 							<ol class="breadcrumb">
 								<li class="breadcrumb-item"><a href="index.html">Главная</a></li>
-								<li class="breadcrumb-item active" aria-current="page">О компании</li>
+								<li class="breadcrumb-item active js-tab-content" data-tab="1" aria-current="page">О компании</li>
+								<li class="breadcrumb-item js-tab-content" data-tab="2" aria-current="page">История</li>
+								<li class="breadcrumb-item js-tab-content" data-tab="3" aria-current="page">Награды</li>
+								<li class="breadcrumb-item js-tab-content" data-tab="4" aria-current="page">Соц.инициативы</li>
+								<li class="breadcrumb-item js-tab-content" data-tab="5" aria-current="page">Философия бренда</li>
 							</ol>
 						</nav>
-						<h1 class="h2">О компании</h1>
+						<h1 class="h2 js-tab-content active" data-tab="1">О компании</h1>
+						<div class="h2 js-tab-content" data-tab="2">История</div>
+						<h1 class="h2 js-tab-content" data-tab="3">Награды</h1>
+						<h1 class="h2 js-tab-content" data-tab="4">Соц.инициативы</h1>
+						<h1 class="h2 js-tab-content" data-tab="5">Философия бренда</h1>
 					</div>
 				</div>
 				<div class="col-12">
 					<ul class="nav nav-tabs">
 						<li class="nav-item" role="presentation">
-							<button class="nav-link active" id="1-tab" data-bs-toggle="tab" data-bs-target="#1-tab-pane" type="button"
-								role="tab" aria-controls="1-tab-pane" aria-selected="true">О компании</button>
+							<button class="nav-link active js-tab-trigger" data-tab="1">О компании</button>
 						</li>
 						<li class="nav-item" role="presentation">
-							<button class="nav-link" id="2-tab" data-bs-toggle="tab" data-bs-target="#2-tab-pane" type="button"
-								role="tab" aria-controls="2-tab-pane" aria-selected="false">История</button>
+							<button class="nav-link js-tab-trigger" data-tab="2">История</button>
 						</li>
 						<li class="nav-item" role="presentation">
-							<button class="nav-link" id="3-tab" data-bs-toggle="tab" data-bs-target="#3-tab-pane" type="button"
-								role="tab" aria-controls="3-tab-pane" aria-selected="false">Награды</button>
+							<button class="nav-link js-tab-trigger" data-tab="3">Награды</button>
 						</li>
 						<li class="nav-item" role="presentation">
-							<button class="nav-link" id="4-tab" data-bs-toggle="tab" data-bs-target="#4-tab-pane" type="button"
-								role="tab" aria-controls="4-tab-pane" aria-selected="false">Соц.инициативы</button>
+							<button class="nav-link js-tab-trigger" data-tab="4">Соц.инициативы</button>
 						</li>
 						<li class="nav-item" role="presentation">
-							<button class="nav-link" id="5-tab" data-bs-toggle="tab" data-bs-target="#5-tab-pane" type="button"
-								role="tab" aria-controls="5-tab-pane" aria-selected="false">Философия бренда</button>
+							<button class="nav-link js-tab-trigger" data-tab="5">Философия бренда</button>
 						</li>
 					</ul>
 				</div>
@@ -117,7 +145,7 @@
 	</section>
 
 	<div class="tab-content tab-content-about">
-		<div class="tab-pane fade show active" id="1-tab-pane" role="tabpanel" aria-labelledby="1-tab" tabindex="0">
+		<div class="tab-pane js-tab-content active" data-tab="1">
 			<section class="our-factory bg-light-blue">
 				<div class="container">
 					<div class="row align-items-center">
@@ -138,7 +166,6 @@
 											горячего розлива</a>, аналогично производству напитков в
 										Южной Корее, Японии, США.</p>
 								</div>
-								<a href="about.html" class="btn btn-md btn-border-blue">подробнее о нас</a>
 							</div>
 						</div>
 					</div>
@@ -172,7 +199,8 @@
 									</div>
 								</div>
 
-								<div class="tehnology-image"><img src="img/tehnology-image.png" alt="">
+								<div class="tehnology-image"><img src="img/tehnology-image.png" alt="" class="d-none d-md-block">
+									<img src="img/tehnology-image-mob.png" alt="" class="d-block d-md-none">
 									<div class="text-overlay">технология</div>
 								</div>
 							</div>
@@ -195,7 +223,7 @@
 										<div class="col-12 col-lg-8">
 											<h2>Полезные свойства Алоэ Вера</h2>
 											<div class="row">
-												<div class="col-12 col-sm-6 col-lg-5">
+												<div class="col-12 col-sm-6 col-lg-5 mb-32">
 													<div class="box-text font-500">
 														<p>В состав Алоэ Вера входят 18 аминокислот, из них 8 наш организм получает в чистом виде,
 															так как сам их синтезировать не
@@ -211,7 +239,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="col-12 col-md-4">
+										<div class="col-12 col-lg-4">
 											<h3>Алоэ содержит:</h3>
 											<ul class="my-ul list-cube">
 												<li>магний</li>
@@ -288,7 +316,7 @@
 			<section class="influence">
 				<div class="container">
 					<div class="row">
-						<div class="col-12 col-lg-4 order-lg-1">
+						<div class="col-12 col-xl-4 order-xl-1">
 							<div class="influence-content">
 								<h2>влияние сока алоэ
 									на организм</h2>
@@ -302,7 +330,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-12 col-lg-7">
+						<div class="col-12 col-xl-7">
 							<div class="influence-wrapper">
 								<div class="influence-box influence-box-green">
 									<h3>Иммунитет</h3>
@@ -350,11 +378,11 @@
 				</div>
 			</div>
 		</div>
-		<div class="tab-pane fade" id="2-tab-pane" role="tabpanel" aria-labelledby="2-tab" tabindex="0">
+		<div class="tab-pane js-tab-content" data-tab="2">
 			<section class="history-company">
 				<div class="container">
 					<div class="row">
-						<div class="col-12 col-lg-9 offset-lg-4">
+						<div class="col-12 col-xl-9 offset-xl-4">
 							<div class="history-company-list">
 								<div class="history-company-box">
 									<div class="history-company-box__date">
@@ -376,7 +404,7 @@
 										<h3>май - июнь</h3>
 										<div class="box-text font-500">
 											<p>расширение линейки вкусов <br>
-											«Алоэ Вера» 0,5л пэт. Клубника и Манго</p>
+												«Алоэ Вера» 0,5л пэт. Клубника и Манго</p>
 										</div>
 									</div>
 								</div>
@@ -388,7 +416,7 @@
 										<h3>Июнь - август</h3>
 										<div class="box-text font-500">
 											<p>выход на 100% мощность завода и бесперебойные <br>
-											поставки продукции партнерам завода</p>
+												поставки продукции партнерам завода</p>
 										</div>
 									</div>
 								</div>
@@ -400,7 +428,7 @@
 										<!-- <h3>май - июнь</h3> -->
 										<div class="box-text font-500">
 											<p>модернизация оборудования и увеличение <br>
-											производственной мощности в 2 раза</p>
+												производственной мощности в 2 раза</p>
 										</div>
 									</div>
 								</div>
@@ -412,8 +440,8 @@
 										<!-- <h3>май - июнь</h3> -->
 										<div class="box-text font-500">
 											<p>запуск производства напитка Холодный чай <br>
-											Алоэ Вера «Зеленый чай», « Зеленый чай» Персик, <br>
-											«Зеленый чай» Лайм</p>
+												Алоэ Вера «Зеленый чай», « Зеленый чай» Персик, <br>
+												«Зеленый чай» Лайм</p>
 										</div>
 									</div>
 								</div>
@@ -450,7 +478,7 @@
 				</div>
 			</section>
 		</div>
-		<div class="tab-pane fade" id="3-tab-pane" role="tabpanel" aria-labelledby="3-tab" tabindex="0">
+		<div class="tab-pane js-tab-content" data-tab="3">
 			<section class="bg-light-blue p-120">
 				<div class="container">
 					<div class="row">
@@ -461,7 +489,7 @@
 				</div>
 			</section>
 		</div>
-		<div class="tab-pane fade" id="4-tab-pane" role="tabpanel" aria-labelledby="4-tab" tabindex="0">
+		<div class="tab-pane js-tab-content" data-tab="4">
 			<section class="our-news other-articles bg-light-blue p-120">
 				<div class="container">
 					<div class="row mb-42">
@@ -469,7 +497,8 @@
 							<h2>наши социальные инициативы</h2>
 							<div class="subtitle-text color-accent-blue">и мероприятия</div>
 							<div class="box-text box-subtext font-500">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+									et
 									dolore magna
 									aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
 							</div>
@@ -477,7 +506,7 @@
 					</div>
 
 					<div class="row">
-						<div class="col-12 col-lg-4 mb-25">
+						<div class="col-12 col-md-6 col-lg-4 mb-25">
 							<div class="news-card news-card-green">
 								<a href="article.html" class="news-card__img"><img src="img/news3.jpg" alt=""></a>
 								<div class="news-card__body">
@@ -496,7 +525,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-12 col-lg-4 mb-25">
+						<div class="col-12 col-md-6 col-lg-4 mb-25">
 							<div class="news-card news-card-blue">
 								<a href="article.html" class="news-card__img"><img src="img/news4.jpg" alt=""></a>
 								<div class="news-card__body">
@@ -515,7 +544,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-12 col-lg-4 mb-25">
+						<div class="col-12 col-md-6 col-lg-4 mb-25">
 							<div class="news-card news-card-green">
 								<a href="article.html" class="news-card__img"><img src="img/news5.jpg" alt=""></a>
 								<div class="news-card__body">
@@ -534,16 +563,16 @@
 								</div>
 							</div>
 						</div>
-					
-						<div class="col-12 col-lg-4 mb-25 offset-lg-2">
+
+						<div class="col-12 col-md-6 col-lg-4 mb-25 offset-lg-2">
 							<div class="news-card news-card-blue">
 								<a href="article.html" class="news-card__img"><img src="img/article-img6.png" alt=""></a>
 								<div class="news-card__body">
 									<a href="article.html" class="news-card__title h3">Молодежное движение</a>
 									<div class="box-text font-500">
 										<p>Небольшое описание мероприятия в несколько
-										строк. Небольшое описание мероприятия
-										в несколько строк.</p>
+											строк. Небольшое описание мероприятия
+											в несколько строк.</p>
 									</div>
 									<a href="article.html" class="link-page link-page-blue">
 										<span>Подробнее</span>
@@ -554,7 +583,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-12 col-lg-4 mb-25">
+						<div class="col-12 col-md-6 col-lg-4 mb-25">
 							<div class="news-card news-card-green">
 								<a href="article.html" class="news-card__img"><img src="img/article-img7.png" alt=""></a>
 								<div class="news-card__body">
@@ -577,12 +606,12 @@
 				</div>
 			</section>
 		</div>
-		<div class="tab-pane fade" id="5-tab-pane" role="tabpanel" aria-labelledby="5-tab" tabindex="0">
+		<div class="tab-pane js-tab-content" data-tab="5">
 			<section class="bg-light-blue p-120">
 				<div class="container">
 					<div class="row">
 						<div class="col-12">
-							<h2>Награды</h2>
+							<h2>Философия бренда</h2>
 						</div>
 					</div>
 				</div>
@@ -674,6 +703,8 @@
 					</svg>
 				</button>
 				<div class="dealers-overlay modal-overlay callback-overlay">
+					<div class="decor-line decor-line1"></div>
+					<div class="decor-line decor-line2"></div>
 					<div class="decor-line decor-line3"></div>
 					<div class="decor-line decor-line4"></div>
 					<div class="dealers-wrapper modal-wrapper callback-wrapper">
@@ -703,12 +734,12 @@
 									</div>
 								</div>
 								<div class="row align-items-center">
-									<div class="col-12 col-lg-7">
+									<div class="col-12 col-md-6 col-lg-7">
 										<div class="consent font-500">
 											<p>Нажимая кнопку «Отправить» Вы даете свое согласие на обработку персональных данных</p>
 										</div>
 									</div>
-									<div class="col-12 col-lg-5">
+									<div class="col-12 col-md-6 col-lg-5">
 										<button type="submit" class="btn btn-md btn-accent-blue">отправить</button>
 									</div>
 								</div>
